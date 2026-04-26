@@ -21,7 +21,7 @@ export default function Footer() {
           <p className="mb-2 text-sm font-bold text-ink">聯絡方式</p>
           <ul className="m-0 list-none space-y-1.5 p-0 text-sm">
             <li><a href="mailto:firstwalkus@gmail.com" className="text-ink-soft no-underline hover:text-ink">firstwalkus@gmail.com</a></li>
-            <li>LINE: @firstwalkus</li>
+            <li><a href="https://www.instagram.com/firstwalkus/" target="_blank" rel="noopener noreferrer" className="text-ink-soft no-underline hover:text-ink">Instagram: @firstwalkus</a></li>
           </ul>
         </div>
       </div>
