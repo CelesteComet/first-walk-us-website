@@ -11,7 +11,7 @@ function About() {
           We know the path because we walked it.
         </h1>
         <p className="m-0 max-w-3xl text-base leading-8 text-[var(--sea-ink-soft)]">
-          First Walk US was founded by Taiwanese students who applied to De Anza College and transferred to top UC schools. We built the guide we wished we had.
+          First Walk US was founded by Alice Wu and Taiwanese students who applied to De Anza College and transferred to top UC schools. We built the guide we wished we had.
         </p>
       </section>
     </main>
