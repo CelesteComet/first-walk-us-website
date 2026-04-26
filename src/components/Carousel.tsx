@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from 'react'
 
 const images = [
-  { src: '/carousel-1.png', alt: 'Transfer to UC Berkeley' },
-  { src: '/carousel-2.png', alt: 'De Anza College Campus Tour' },
+  { src: '/carousel-1.png', alt: 'De Anza College Campus Tour' },
+  { src: '/carousel-2.png', alt: 'Community College Myths' },
   { src: '/carousel-3.png', alt: 'UC Berkeley Campus Tour' },
   { src: '/carousel-4.png', alt: 'UC Berkeley Admission Evaluator' },
+  { src: '/carousel-5.png', alt: 'Transfer to UC Berkeley' },
 ]
 
 export function Carousel() {
