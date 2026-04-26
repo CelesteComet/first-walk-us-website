@@ -7,12 +7,14 @@ function Home() {
   return (
     <main className="page-wrap px-4 pb-8 pt-14">
       <section className="island-shell rise-in relative overflow-hidden rounded-[2rem] px-6 py-12 sm:px-12 sm:py-16">
-        <p className="island-kicker mb-3">For Taiwan Students</p>
-        <h1 className="display-title mb-5 max-w-3xl text-4xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-6xl">
-          Your Gateway to De Anza College.
+        <h1 className="display-title mb-3 max-w-3xl text-4xl font-bold tracking-tight text-[var(--sea-ink)] sm:text-6xl">
+          矽谷美國留學陪跑
         </h1>
+        <p className="mb-5 max-w-2xl text-lg font-medium text-[var(--sea-ink-soft)]">
+          孩子第一次出國，不該一個人面對一切。
+        </p>
         <p className="mb-8 max-w-2xl text-base text-[var(--sea-ink-soft)] sm:text-lg">
-          We guide Taiwan students through every step of applying to De Anza College in Cupertino, California — in the heart of Silicon Valley.
+          協助台灣學生順利進入 De Anza College，並提供全方位的美國生活適應與就學支援。
         </p>
         <div className="flex flex-wrap gap-3">
           <Link
