@@ -4,57 +4,49 @@ export const Route = createFileRoute('/about')({ component: About })
 
 function About() {
   return (
-    <main className="page-wrap px-4 py-16">
+    <main className="pb-20">
+      <section className="rise-in page-wrap px-4 py-16 text-center">
+        <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-3">關於我</p>
+        <h1 className="font-serif text-4xl font-bold text-ink mb-4 sm:text-5xl">陪伴，是我熱愛的事</h1>
+        <p className="mx-auto max-w-xl text-base leading-8 text-ink-soft">
+          我相信每個人都有屬於自己的節奏與時區。我在這裡，陪你釐清方向、勇越挑戰。
+        </p>
+      </section>
 
-      {/* Hero */}
-      <section className="rise-in mb-12 text-center">
-        <div className="mx-auto mb-6 flex h-28 w-28 items-center justify-center rounded-full border-2 border-[var(--line)] bg-[var(--surface-strong)] text-3xl font-bold text-[var(--lagoon-deep)] shadow-sm">
-          AW
+      <section className="bg-cream-alt py-12 px-4">
+        <div className="page-wrap max-w-2xl mx-auto rounded-2xl bg-white p-8 shadow-sm sm:p-10">
+          <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-4">我的故事</p>
+          <p className="mb-5 text-sm leading-8 text-ink-soft">
+            我從台灣來到加州，一開始不認識任何人，英文也不夠流利，面對一疊令人困惑的文件。我自己摸索出一條路，申請進入 De Anza College，完成了轉學流程，最終進入頂尖 UC。
+          </p>
+          <p className="text-sm leading-8 text-ink-soft">
+            這段經歷催生了「初行 FirstWalkUS」。我建立了自己當年需要卻沒有的指引，讓下一位學生不必獨自面對一切。
+          </p>
         </div>
-        <p className="island-kicker mb-3">Founder</p>
-        <h1 className="display-title mb-4 text-5xl font-bold text-[var(--sea-ink)] sm:text-6xl">
-          Alice Wu
-        </h1>
-        <p className="mx-auto max-w-xl text-lg leading-8 text-[var(--sea-ink-soft)]">
-          Helping Taiwan students find their footing in Silicon Valley — one application at a time.
-        </p>
       </section>
 
-      {/* Story */}
-      <section className="island-shell mx-auto mb-8 max-w-2xl rounded-2xl p-8 sm:p-10">
-        <p className="island-kicker mb-4">My Story</p>
-        <p className="mb-5 text-base leading-8 text-[var(--sea-ink-soft)]">
-          I came to California from Taiwan not knowing anyone, with imperfect English and a stack of confusing paperwork. I figured it out — applied to De Anza College, navigated the transfer process, and made it to a top UC school.
-        </p>
-        <p className="text-base leading-8 text-[var(--sea-ink-soft)]">
-          That experience became First Walk US. I built the guide I needed but didn't have, so the next student doesn't have to go it alone. Every service we offer is something I personally went through.
-        </p>
+      <section className="page-wrap px-4 py-14">
+        <div className="grid grid-cols-3 gap-4 text-center max-w-2xl mx-auto mb-12">
+          {[
+            { number: '50+', label: '陪伴學員' },
+            { number: 'UC', label: '轉學成功' },
+            { number: '5 年', label: '矽谷在地' },
+          ].map(({ number, label }) => (
+            <div key={label} className="rounded-2xl bg-white px-4 py-6 shadow-sm">
+              <p className="font-serif text-3xl font-bold text-gold mb-1">{number}</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-ink-soft">{label}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center">
+          <Link
+            to="/contact"
+            className="rounded-full bg-gold px-8 py-3 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
+          >
+            預約免費諮詢
+          </Link>
+        </div>
       </section>
-
-      {/* Stats */}
-      <section className="mx-auto mb-12 grid max-w-2xl grid-cols-3 gap-4 text-center">
-        {[
-          { number: '50+', label: 'Students helped' },
-          { number: 'UC', label: 'Transfer success' },
-          { number: '5 yrs', label: 'In Silicon Valley' },
-        ].map(({ number, label }) => (
-          <div key={label} className="island-shell rounded-2xl px-4 py-6">
-            <p className="display-title mb-1 text-3xl font-bold text-[var(--lagoon-deep)]">{number}</p>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[var(--sea-ink-soft)]">{label}</p>
-          </div>
-        ))}
-      </section>
-
-      {/* CTA */}
-      <div className="text-center">
-        <Link
-          to="/contact"
-          className="inline-block rounded-full border border-[rgba(50,143,151,0.3)] bg-[rgba(79,184,178,0.14)] px-8 py-3 text-sm font-semibold text-[var(--lagoon-deep)] no-underline transition hover:-translate-y-0.5 hover:bg-[rgba(79,184,178,0.24)]"
-        >
-          Book a Free Consultation
-        </Link>
-      </div>
-
     </main>
   )
 }

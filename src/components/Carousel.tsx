@@ -8,7 +8,7 @@ const images = [
   { src: '/carousel-5.png', alt: 'Transfer to UC Berkeley' },
 ]
 
-export function Carousel() {
+export function Carousel({ fillBackground = false }: { fillBackground?: boolean }) {
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
   const touchStartX = useRef<number | null>(null)
@@ -37,7 +37,7 @@ export function Carousel() {
 
   return (
     <div
-      className="relative overflow-hidden rounded-2xl"
+      className={fillBackground ? "relative overflow-hidden w-full h-full" : "relative overflow-hidden rounded-2xl"}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={onTouchStart}
@@ -53,8 +53,11 @@ export function Carousel() {
             key={img.src}
             src={img.src}
             alt={img.alt}
-            className="w-full shrink-0 object-cover"
-            style={{ aspectRatio: '16/9' }}
+            className={fillBackground
+              ? "w-full h-full shrink-0 object-cover object-center"
+              : "w-full shrink-0 object-cover"
+            }
+            style={fillBackground ? undefined : { aspectRatio: '16/9' }}
           />
         ))}
       </div>

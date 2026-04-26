@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 465" fill="none">
+
+  <!-- Large circular arc: sweeps from lower-left, counterclockwise up and over to upper-right -->
+  <path d="M 128 268 A 195 195 0 1 0 342 98"
+        stroke="#364055" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Golden circle at top-right (head / sun) -->
+  <circle cx="368" cy="98" r="22" fill="#c9a96e"/>
+
+  <!-- Road left edge (dark navy) — winds from bottom-left upward to golden dot -->
+  <path d="M 122 284 C 152 258, 190 232, 212 204
+           C 234 176, 244 150, 264 128
+           C 277 114, 298 103, 322 97"
+        stroke="#364055" stroke-width="10" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Road right edge (gold) — winds from bottom upward to golden dot -->
+  <path d="M 168 295 C 202 274, 240 256, 262 235
+           C 284 214, 296 190, 306 166
+           C 318 138, 338 118, 366 110"
+        stroke="#c9a96e" stroke-width="10" fill="none"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- "FirstWalkUS" — tspan keeps colors in one centered text -->
+  <text x="250" y="362" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="46" font-weight="400" letter-spacing="1.5">
+    <tspan fill="#364055">FirstWalk</tspan><tspan fill="#c9a96e">US</tspan>
+  </text>
+
+  <!-- Decorative row: ——·  初 行  ·—— -->
+  <line x1="82" y1="386" x2="186" y2="386" stroke="#364055" stroke-width="1.2"/>
+  <circle cx="195" cy="386" r="3.5" fill="#364055"/>
+  <text x="250" y="395" text-anchor="middle"
+        font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+        font-size="27" letter-spacing="10" fill="#364055">初 行</text>
+  <circle cx="305" cy="386" r="3.5" fill="#364055"/>
+  <line x1="314" y1="386" x2="418" y2="386" stroke="#364055" stroke-width="1.2"/>
+
+  <!-- Tagline -->
+  <text x="250" y="435" text-anchor="middle"
+        font-family="'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif"
+        font-size="15" letter-spacing="4.5" fill="#364055" opacity="0.7">每 一 步，都 有 我 陪 你</text>
+
+</svg>
