@@ -14,13 +14,14 @@ function Home() {
     <main className="pb-20">
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-cream via-cream-alt to-cream px-4 py-16 sm:py-24">
-        {/* Decorative background circles */}
         <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-gold/10" />
         <div className="pointer-events-none absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-gold/8" />
 
         <div className="page-wrap relative flex flex-col items-center gap-10 sm:flex-row sm:items-center sm:gap-16">
           {/* Text */}
           <div className="flex-1 text-center sm:text-left">
+            {/* Small logo mark */}
+            <img src="/logo.jpeg" alt="FirstWalkUS" className="h-12 w-auto mx-auto sm:mx-0 mb-5 object-contain" />
             <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-gold">矽谷留學陪跑專家</p>
             <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-5">
               每一步，<br />都有我陪你
@@ -42,7 +43,6 @@ function Home() {
                 了解服務內容
               </Link>
             </div>
-            {/* Trust tags */}
             <div className="flex flex-wrap justify-center sm:justify-start gap-2">
               {['✈️ 機場接機', '🎓 申請指導', '🏠 住宿安排', '💬 3 個月陪伴'].map(tag => (
                 <span key={tag} className="rounded-full bg-white border border-cream-alt px-4 py-1.5 text-xs font-medium text-ink-soft shadow-sm">
@@ -52,13 +52,21 @@ function Home() {
             </div>
           </div>
 
-          {/* Logo visual */}
-          <div className="flex-shrink-0 w-64 h-64 sm:w-80 sm:h-80">
+          {/* Photo */}
+          <div className="relative flex-shrink-0">
+            {/* Gold decorative ring offset behind photo */}
+            <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-gold/40" />
             <img
-              src="/logo.jpeg"
-              alt="FirstWalkUS 初行"
-              className="w-full h-full object-contain drop-shadow-lg"
+              src="/alice.jpg"
+              alt="Alice — FirstWalkUS"
+              className="relative w-64 sm:w-72 rounded-2xl object-cover object-top shadow-xl"
+              style={{ aspectRatio: '3/4' }}
             />
+            {/* Name card */}
+            <div className="absolute -bottom-4 left-4 rounded-xl bg-white px-4 py-2 shadow-md">
+              <p className="text-xs font-bold text-ink">吳剛綾 Alice</p>
+              <p className="text-xs text-ink-soft">留學陪跑顧問</p>
+            </div>
           </div>
         </div>
       </section>
