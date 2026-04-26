@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { Carousel } from '../components/Carousel'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -27,6 +28,11 @@ function Home() {
             Our Services
           </Link>
         </div>
+      </section>
+
+      {/* Carousel */}
+      <section className="mt-6">
+        <Carousel />
       </section>
     </main>
   )
