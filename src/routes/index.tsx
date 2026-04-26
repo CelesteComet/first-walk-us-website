@@ -13,20 +13,53 @@ function Home() {
   return (
     <main className="pb-20">
       {/* Hero */}
-      <section className="bg-cream-alt py-20 px-4 text-center">
-        <div className="page-wrap">
-          <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-4">
-            每一步，<br />都有我陪你
-          </h1>
-          <p className="text-ink-soft text-base mb-8 max-w-xs leading-7 mx-auto">
-            陪你探索方向，建立信心，<br />一步步走向理想的未來。
-          </p>
-          <Link
-            to="/contact"
-            className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
-          >
-            預約免費諮詢
-          </Link>
+      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-cream-alt to-cream px-4 py-16 sm:py-24">
+        {/* Decorative background circles */}
+        <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-gold/10" />
+        <div className="pointer-events-none absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-gold/8" />
+
+        <div className="page-wrap relative flex flex-col items-center gap-10 sm:flex-row sm:items-center sm:gap-16">
+          {/* Text */}
+          <div className="flex-1 text-center sm:text-left">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-gold">矽谷留學陪跑專家</p>
+            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-5">
+              每一步，<br />都有我陪你
+            </h1>
+            <p className="text-ink-soft text-base leading-8 mb-8 max-w-sm mx-auto sm:mx-0">
+              從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
+            </p>
+            <div className="flex flex-wrap justify-center sm:justify-start gap-3 mb-10">
+              <Link
+                to="/contact"
+                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
+              >
+                預約免費諮詢
+              </Link>
+              <Link
+                to="/services"
+                className="rounded-full border border-gold px-7 py-3 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white inline-block"
+              >
+                了解服務內容
+              </Link>
+            </div>
+            {/* Trust tags */}
+            <div className="flex flex-wrap justify-center sm:justify-start gap-2">
+              {['✈️ 機場接機', '🎓 申請指導', '🏠 住宿安排', '💬 3 個月陪伴'].map(tag => (
+                <span key={tag} className="rounded-full bg-white border border-cream-alt px-4 py-1.5 text-xs font-medium text-ink-soft shadow-sm">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Logo visual */}
+          <div className="flex-shrink-0 w-64 h-64 sm:w-80 sm:h-80">
+            <img
+              src="/logo.jpeg"
+              alt="FirstWalkUS 初行"
+              className="w-full h-full object-contain drop-shadow-lg"
+            />
+          </div>
         </div>
       </section>
 
