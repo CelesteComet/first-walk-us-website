@@ -14,7 +14,7 @@ function Contact() {
           Book a free 30-minute consultation in Mandarin or English.
         </p>
         <ul className="mt-4 list-none space-y-2 p-0 text-sm text-[var(--sea-ink-soft)]">
-          <li>Email: <a href="mailto:hello@firstwalkus.com">hello@firstwalkus.com</a></li>
+          <li>Email: <a href="mailto:firstwalkus@gmail.com">firstwalkus@gmail.com</a></li>
           <li>LINE: @firstwalkus</li>
         </ul>
       </section>

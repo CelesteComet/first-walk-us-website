@@ -37,8 +37,8 @@ export default function Footer() {
           <p className="mb-2 text-sm font-bold text-[var(--sea-ink)]">Contact</p>
           <ul className="m-0 list-none space-y-1.5 p-0 text-sm">
             <li>
-              <a href="mailto:hello@firstwalkus.com" className="text-[var(--sea-ink-soft)] no-underline hover:text-[var(--sea-ink)]">
-                hello@firstwalkus.com
+              <a href="mailto:firstwalkus@gmail.com" className="text-[var(--sea-ink-soft)] no-underline hover:text-[var(--sea-ink)]">
+                firstwalkus@gmail.com
               </a>
             </li>
             <li className="text-[var(--sea-ink-soft)]">LINE: @firstwalkus</li>
