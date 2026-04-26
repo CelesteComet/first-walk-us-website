@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 
 const images = [
   { src: '/carousel-1.png', alt: 'De Anza College Campus Tour' },
@@ -11,9 +11,10 @@ const images = [
 export function Carousel() {
   const [current, setCurrent] = useState(0)
   const [paused, setPaused] = useState(false)
+  const touchStartX = useRef<number | null>(null)
 
   const next = useCallback(() => setCurrent(i => (i + 1) % images.length), [])
-  const prev = () => setCurrent(i => (i - 1 + images.length) % images.length)
+  const prev = useCallback(() => setCurrent(i => (i - 1 + images.length) % images.length), [])
 
   useEffect(() => {
     if (paused) return
@@ -21,11 +22,26 @@ export function Carousel() {
     return () => clearInterval(id)
   }, [paused, next])
 
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+    setPaused(true)
+  }
+
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return
+    const delta = touchStartX.current - e.changedTouches[0].clientX
+    if (Math.abs(delta) > 40) delta > 0 ? next() : prev()
+    touchStartX.current = null
+    setPaused(false)
+  }
+
   return (
     <div
       className="relative overflow-hidden rounded-2xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
     >
       {/* Slides */}
       <div
