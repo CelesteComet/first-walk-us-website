@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
+import { CalendlyModal } from './CalendlyModal'
 
 const navLinks = [
   { to: '/', label: '首頁' },
@@ -11,8 +12,10 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false)
 
   return (
+    <>
     <header className="sticky top-0 z-50 border-b border-black/10 bg-cream/95 backdrop-blur-md">
       <nav className="page-wrap flex items-center gap-6 px-4 py-4">
         <Link to="/" className="flex-shrink-0 no-underline" onClick={() => setOpen(false)}>
@@ -29,15 +32,12 @@ export default function Header() {
         </div>
 
         <div className="ml-auto flex items-center gap-3">
-          <a
-            href="https://calendly.com/firstwalkus/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-block rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
-            onClick={() => setOpen(false)}
+          <button
+            className="hidden sm:inline-block rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white transition hover:bg-gold-deep border-0 cursor-pointer"
+            onClick={() => { setOpen(false); setModalOpen(true) }}
           >
             預約免費諮詢
-          </a>
+          </button>
 
           {/* Hamburger */}
           <button
@@ -67,18 +67,17 @@ export default function Header() {
                 {label}
               </Link>
             ))}
-            <a
-              href="https://calendly.com/firstwalkus/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
-              onClick={() => setOpen(false)}
+            <button
+              className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-gold-deep border-0 cursor-pointer"
+              onClick={() => { setOpen(false); setModalOpen(true) }}
             >
               預約免費諮詢
-            </a>
+            </button>
           </div>
         </div>
       )}
     </header>
+    <CalendlyModal open={modalOpen} onClose={() => setModalOpen(false)} />
+    </>
   )
 }
