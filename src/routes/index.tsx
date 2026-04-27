@@ -13,61 +13,57 @@ function Home() {
   return (
     <main className="pb-20">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-cream-alt to-cream px-4 py-16 sm:py-24">
-        <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-gold/10" />
-        <div className="pointer-events-none absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-gold/8" />
+      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-cream-alt to-cream px-4 py-20 sm:py-32">
+        {/* Background blobs */}
+        <div className="pointer-events-none absolute -top-40 -right-40 h-[560px] w-[560px] rounded-full bg-gold/8" />
+        <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-gold/6" />
+        <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-gold/5" />
 
-        <div className="page-wrap relative flex flex-col items-center gap-10 sm:flex-row sm:items-center sm:gap-16">
-          {/* Text */}
-          <div className="flex-1 text-center sm:text-left">
-            {/* Small logo mark */}
-            <img src="/logo.jpeg" alt="FirstWalkUS" className="h-12 w-auto mx-auto sm:mx-0 mb-5 object-contain" />
-            <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-gold">矽谷留學陪跑專家</p>
-            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-5">
+        <div className="page-wrap relative flex flex-col-reverse items-center gap-14 sm:flex-row sm:items-center sm:gap-16">
+
+          {/* Left: text */}
+          <div className="flex-1 text-center sm:text-left rise-in">
+            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold-deep">
+              矽谷留學陪跑專家
+            </span>
+            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-6">
               每一步，<br />都有我陪你
             </h1>
-            <p className="text-ink-soft text-base leading-8 mb-8 max-w-sm mx-auto sm:mx-0">
+            <p className="text-ink-soft text-lg leading-9 mb-10 max-w-lg mx-auto sm:mx-0">
               從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
             </p>
-            <div className="flex flex-wrap justify-center sm:justify-start gap-3 mb-10">
+            <div className="flex flex-wrap justify-center sm:justify-start gap-3">
               <Link
                 to="/contact"
-                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
+                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white no-underline shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
               >
                 預約免費諮詢
               </Link>
               <Link
                 to="/services"
-                className="rounded-full border border-gold px-7 py-3 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white inline-block"
+                className="rounded-full border border-gold/60 px-7 py-3 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
               >
                 了解服務內容
               </Link>
             </div>
-            <div className="flex flex-wrap justify-center sm:justify-start gap-2">
-              {['✈️ 機場接機', '🎓 申請指導', '🏠 住宿安排', '💬 3 個月陪伴'].map(tag => (
-                <span key={tag} className="rounded-full bg-white border border-cream-alt px-4 py-1.5 text-xs font-medium text-ink-soft shadow-sm">
-                  {tag}
-                </span>
-              ))}
+          </div>
+
+          {/* Right: logo */}
+          <div className="flex-shrink-0 flex items-center justify-center">
+            {/* Outer glow */}
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/25 to-transparent blur-2xl scale-110" />
+              {/* Ring + card */}
+              <div className="relative rounded-full bg-white/80 p-6 shadow-2xl ring-1 ring-gold/30 backdrop-blur-sm sm:p-8">
+                <img
+                  src="/firstwalkus logo (512 x 512 px)/2000x2000 初行firstwalkus_logo.svg"
+                  alt="FirstWalkUS 初行"
+                  className="w-56 h-56 sm:w-72 sm:h-72 object-contain"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Photo */}
-          <div className="relative flex-shrink-0">
-            {/* Gold decorative ring offset behind photo */}
-            <div className="absolute -bottom-3 -right-3 w-full h-full rounded-2xl border-2 border-gold/40" />
-            <img
-              src="/alice.jpg"
-              alt="Alice — FirstWalkUS"
-              className="relative w-64 sm:w-72 rounded-2xl object-cover object-top shadow-xl"
-              style={{ aspectRatio: '3/4' }}
-            />
-            {/* Name card */}
-            <div className="absolute -bottom-4 left-4 rounded-xl bg-white px-4 py-2 shadow-md">
-              <p className="text-xs font-bold text-ink">吳剛綾 Alice</p>
-              <p className="text-xs text-ink-soft">留學陪跑顧問</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -129,7 +125,9 @@ function Home() {
               了解更多
             </Link>
           </div>
-          <div className="h-56 w-56 flex-shrink-0 rounded-full overflow-hidden bg-gold/20 mx-auto sm:mx-0" />
+          <div className="h-56 w-56 flex-shrink-0 rounded-full overflow-hidden bg-gold/20 mx-auto sm:mx-0">
+            <img src="/1.jpg" alt="Alice" className="h-full w-full object-cover object-top" />
+          </div>
         </div>
       </section>
 
@@ -142,26 +140,22 @@ function Home() {
             {
               icon: '🎓',
               title: '核心服務套餐',
-              price: 'US$3,000',
               desc: '申請 De Anza、簽證辦理、機場接機、住宿安排，及入美 3 個月全方位生活支援。',
             },
             {
               icon: '📅',
               title: '延伸月費方案',
-              price: 'US$500 / 月',
               desc: '3 個月後仍需支援？每月方案包含每週 check-in、採購陪同及緊急聯絡人服務。',
             },
             {
               icon: '✨',
               title: '加購服務',
-              price: '另行報價',
               desc: '買車協助、駕照訓練、轉學申請指導、校外租房協助，依需求量身安排。',
             },
-          ].map(({ icon, title, price, desc }) => (
+          ].map(({ icon, title, desc }) => (
             <div key={title} className="rounded-2xl bg-white p-6 shadow-sm text-left flex flex-col">
               <span className="text-2xl mb-3">{icon}</span>
-              <p className="font-serif font-bold text-ink mb-0.5">{title}</p>
-              <p className="text-sm font-semibold text-gold mb-3">{price}</p>
+              <p className="font-serif font-bold text-ink mb-3">{title}</p>
               <p className="text-sm text-ink-soft leading-6 mb-4 flex-1">{desc}</p>
               <Link to="/services" className="text-sm font-semibold text-gold no-underline hover:text-gold-deep">
                 了解更多 →

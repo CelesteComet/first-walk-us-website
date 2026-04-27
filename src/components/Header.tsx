@@ -5,6 +5,7 @@ const navLinks = [
   { to: '/', label: '首頁' },
   { to: '/about', label: '關於我' },
   { to: '/services', label: '服務項目' },
+  { to: '/blog', label: '部落格' },
   { to: '/contact', label: '聯絡我' },
 ]
 
@@ -15,7 +16,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-black/10 bg-cream/95 backdrop-blur-md">
       <nav className="page-wrap flex items-center gap-6 px-4 py-4">
         <Link to="/" className="flex-shrink-0 no-underline" onClick={() => setOpen(false)}>
-          <img src="/logo.jpeg" alt="FirstWalkUS" className="h-10 w-auto" />
+          <img src="/firstwalkus logo (512 x 512 px)/3.svg" alt="FirstWalkUS" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop links */}

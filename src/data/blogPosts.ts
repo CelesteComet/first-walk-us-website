@@ -1,0 +1,93 @@
+export interface BlogPost {
+  slug: string
+  date: string
+  tag: string
+  title: string
+  summary: string
+  image: string
+  content: { heading: string; body: string }[]
+}
+
+export const posts: BlogPost[] = [
+  {
+    slug: 'why-de-anza',
+    date: '2026年4月',
+    tag: '學校介紹',
+    image: '/DAC_Aerial-2.jpg',
+    title: '為什麼選擇 De Anza College？給台灣學生的完整解析',
+    summary:
+      'De Anza College 位於加州矽谷核心的庫比蒂諾市，不只是一所社區大學，更是無數學生通往頂尖 UC 的黃金跳板。本文帶你全面了解它的優勢。',
+    content: [
+      {
+        heading: '矽谷正中心，地理位置無可取代',
+        body: 'De Anza College 坐落於庫比蒂諾（Cupertino），與 Apple 全球總部相距不到一公里。走在校園附近，隨處可見科技巨頭的招牌——Google、Apple、Meta、Nvidia 都在附近設有辦公室。這樣的地理位置讓學生在求學期間便能接觸矽谷的實際氛圍，建立人脈，甚至獲得實習機會，是其他社區大學難以複製的先天優勢。',
+      },
+      {
+        heading: '轉學加州頂尖 UC 的成功率名列前茅',
+        body: 'De Anza 每年輸送大量學生轉學至 UC Berkeley、UCLA、UC San Diego 等頂尖大學，轉學人數長期位居加州社區大學前段班。學校設有完整的轉學輔導中心（Transfer Center），提供一對一顧問諮詢、轉學申請工作坊，以及與各 UC 校方的直接對話活動（Transfer Day）。只要策略正確、選課得當，兩年內轉進 UC 並非遙不可及的夢想。',
+      },
+      {
+        heading: '學費親民，CP 值遠勝直接申請四年制大學',
+        body: '對台灣學生而言，直接申請美國四年制大學的學費動輒一年新台幣一百萬以上。相較之下，De Anza 的國際學生學費每學期約 $4,000–$5,000 美元，一年總花費（含生活費）約 $25,000 美元，遠低於 UC 或私立大學。更重要的是，轉學後仍可以較低的 in-state 或同等學費標準入讀，整體留學成本大幅降低。',
+      },
+      {
+        heading: '台灣學生友善，有完整的國際學生支援',
+        body: 'De Anza 的國際學生辦公室（International Student Program, ISP）提供從入學、簽證、選課到生活適應的全方位協助。校內亦有台灣同學會及亞裔學生社群，讓第一次出國的學生不會在語言或文化上感到孤立無援。若你是第一次離開台灣，這樣溫暖的社群支持往往是撐過第一學期的關鍵。',
+      },
+    ],
+  },
+  {
+    slug: 'de-anza-campus-life',
+    date: '2026年4月',
+    tag: '校園生活',
+    image: '/DA_Fountain_View.png',
+    title: 'De Anza College 的校園生活：台灣學生第一年的真實體驗',
+    summary:
+      '來到 De Anza 第一年，你會面對什麼？從選課、社團、飲食到通勤，這篇文章帶你提前預覽矽谷社區大學的日常。',
+    content: [
+      {
+        heading: '開學前：選課策略決定一切',
+        body: '許多台灣學生到了 De Anza 才發現：這裡的選課不像台灣大學有固定課表，而是需要自己主動規劃。若目標是轉學 UC，建議第一學期就諮詢 Transfer Center，確認自己修習的是 IGETC（加州大學一般教育學分轉移課程），避免之後選錯課白白浪費一學期。英文寫作（English Composition）和數學是所有 UC 轉學的必備科目，務必盡早完成。',
+      },
+      {
+        heading: '課堂文化與台灣大不同',
+        body: '在 De Anza，教授非常鼓勵學生發言、提問與討論。課堂參與往往計入成績，默默坐在後排只看黑板的台灣式學習方式在這裡行不通。一開始不習慣是正常的，但只要願意開口，即使英文不完美，教授和同學都會給予正面回應。多利用 Tutoring Center 和辦公室時間（Office Hours），是學業成績進步最快的方式。',
+      },
+      {
+        heading: '校園設施與日常便利',
+        body: 'De Anza 的校園設施相當完善，包含現代化的圖書館、健身房、游泳池以及多個學習中心。校內的 Flint Center 不定期舉辦音樂會與文化活動。飲食方面，學生餐廳選擇多元，周邊的庫比蒂諾有大量亞裔餐廳，台式、港式、日式料理都不難找，思鄉的胃不必太擔心。',
+      },
+      {
+        heading: '通勤與生活機能',
+        body: '大多數台灣學生選擇在學校附近租屋，單人套房或與室友分租一房約 $1,200–$1,800 美元／月。由於矽谷大眾運輸相對不便，不少學生會選擇購買二手自行車或在持有駕照後購買二手車。De Anza 附近有 Cupertino Square 購物中心，步行可達多家超市與餐廳，日常生活機能尚算便利。',
+      },
+    ],
+  },
+  {
+    slug: 'transfer-path',
+    date: '2026年4月',
+    tag: '轉學攻略',
+    image: '/de anza student.jpg',
+    title: '從 De Anza 轉學 UC：台灣學生的完整路徑指南',
+    summary:
+      '進入 De Anza 只是起點，轉學頂尖 UC 才是許多台灣學生的最終目標。本文整理出清晰的轉學路線圖，讓你兩年不走冤枉路。',
+    content: [
+      {
+        heading: '第一步：確認目標校系，逆向規劃選課',
+        body: '轉學成功的關鍵在於「逆向工程」——先確定自己想轉去的 UC 及科系，再回頭查詢該校系的 Articulation Agreement（學分對應協議）。加州有一個叫做 ASSIST.org 的官方網站，清楚列出每一所社區大學的哪些課程可以對應到 UC 的哪些要求。建議在第一學期開始前就規劃好兩年的完整選課藍圖。',
+      },
+      {
+        heading: '第二步：完成 IGETC 及主修必備課程',
+        body: 'IGETC 是一組通識學分，完成後可以豁免大多數 UC 的大一通識要求，大幅降低轉學後的學業壓力。同時，各科系通常也有「必備主修課程（Major Prerequisites）」，例如電腦科學系需要修完微積分、線性代數、資料結構等課。這些課必須在轉學申請前完成或正在修習中，且成績理想（建議 B+ 以上）。',
+      },
+      {
+        heading: '第三步：維持 GPA 並準備轉學文件',
+        body: '加州 UC 轉學的最低 GPA 要求通常是 2.4，但熱門科系（如 CS、商科、工程）實際錄取 GPA 往往在 3.5 以上。每學期都要認真對待每一門課。除了成績，轉學申請還需要撰寫 Personal Insight Questions（類似申請大學的個人陳述），建議提前三到六個月開始構思，讓輔導老師或顧問協助修改。',
+      },
+      {
+        heading: '第四步：善用 De Anza 的資源衝刺申請',
+        body: 'De Anza 的 Transfer Center 每年秋季會舉辦 Transfer Day，UC 各校招生官親臨現場，台灣學生千萬不要錯過。此外，學校的寫作中心（Writing Center）可以免費幫你修改個人陳述，學術顧問（Counselor）也可以協助確認你的選課計畫是否符合目標校系的轉學要求。充分利用這些免費資源，是讓轉學申請更有競爭力的最聰明做法。',
+      },
+    ],
+  },
+]

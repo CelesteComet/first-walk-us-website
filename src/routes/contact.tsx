@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { Instagram, Mail } from 'lucide-react'
 
 export const Route = createFileRoute('/contact')({ component: Contact })
 
@@ -13,12 +14,12 @@ function Contact() {
       <div className="mx-auto max-w-md rounded-2xl bg-white p-8 shadow-sm">
         <ul className="list-none space-y-4 p-0 text-sm text-ink-soft">
           <li className="flex items-center gap-3">
-            <span className="text-gold">✉</span>
+            <Mail size={16} className="text-gold shrink-0" />
             <a href="mailto:firstwalkus@gmail.com" className="text-ink-soft no-underline hover:text-ink">firstwalkus@gmail.com</a>
           </li>
           <li className="flex items-center gap-3">
-            <span className="text-gold">💬</span>
-            LINE: @firstwalkus
+            <Instagram size={16} className="text-gold shrink-0" />
+            <a href="https://www.instagram.com/firstwalkus" className="text-ink-soft no-underline hover:text-ink">Instagram: @firstwalkus</a>
           </li>
         </ul>
         <div className="mt-8 text-center">

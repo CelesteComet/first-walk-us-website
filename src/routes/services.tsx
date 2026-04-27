@@ -45,10 +45,6 @@ function Services() {
             <h2 className="font-serif text-2xl font-bold text-ink">核心服務套餐</h2>
             <span className="mt-2 block h-0.5 w-10 rounded-full bg-gold" />
           </div>
-          <div className="text-right">
-            <p className="text-2xl font-bold text-ink">US$3,000</p>
-            <p className="text-sm text-ink-soft">或等值台幣 NT$94,500</p>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -63,10 +59,6 @@ function Services() {
           ))}
         </div>
 
-        <div className="mt-8 rounded-2xl bg-cream-alt p-6 text-sm text-ink-soft leading-7">
-          <p className="font-semibold text-ink mb-2">付款方式</p>
-          <p>訂金 US$1,000（簽約後支付，啟動服務）＋ 尾款 US$2,000（抵美前 2 週付清）</p>
-        </div>
       </section>
 
       {/* Extended Plan */}
@@ -77,9 +69,6 @@ function Services() {
               <h2 className="font-serif text-2xl font-bold text-ink">延伸月費方案</h2>
               <p className="text-sm text-ink-soft mt-1">入美 3 個月後，可選擇繼續加購</p>
               <span className="mt-2 block h-0.5 w-10 rounded-full bg-gold" />
-            </div>
-            <div className="text-right">
-              <p className="text-2xl font-bold text-ink">US$500<span className="text-base font-normal text-ink-soft"> / 月</span></p>
             </div>
           </div>
 
