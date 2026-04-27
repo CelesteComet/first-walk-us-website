@@ -1,4 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
+import { useState } from 'react'
+import { CalendlyModal } from '#/components/CalendlyModal'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -10,6 +12,8 @@ const videos = [
 ]
 
 function Home() {
+  const [modalOpen, setModalOpen] = useState(false)
+
   return (
     <main className="pb-20">
       {/* Hero */}
@@ -33,12 +37,12 @@ function Home() {
               從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
             </p>
             <div className="flex flex-wrap justify-center sm:justify-start gap-3">
-              <Link
-                to="/contact"
-                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white no-underline shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
+              <button
+                onClick={() => setModalOpen(true)}
+                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
               >
                 預約免費諮詢
-              </Link>
+              </button>
               <Link
                 to="/services"
                 className="rounded-full border border-gold/60 px-7 py-3 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
@@ -177,13 +181,15 @@ function Home() {
       <section className="page-wrap px-4 py-16 text-center">
         <h2 className="font-serif text-2xl font-bold text-ink mb-2">準備好開始你的改變了嗎？</h2>
         <p className="text-sm text-ink-soft mb-8">讓我們一起邁出第一步</p>
-        <Link
-          to="/contact"
-          className="rounded-full bg-gold px-8 py-3 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
+        <button
+          onClick={() => setModalOpen(true)}
+          className="rounded-full bg-gold px-8 py-3 text-sm font-semibold text-white transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
         >
           預約免費諮詢
-        </Link>
+        </button>
       </section>
+
+      <CalendlyModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </main>
   )
 }

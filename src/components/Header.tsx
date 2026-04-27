@@ -29,13 +29,15 @@ export default function Header() {
         </div>
 
         <div className="ml-auto flex items-center gap-3">
-          <Link
-            to="/contact"
+          <a
+            href="https://calendly.com/firstwalkus/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-block rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
             onClick={() => setOpen(false)}
           >
             預約免費諮詢
-          </Link>
+          </a>
 
           {/* Hamburger */}
           <button
@@ -65,13 +67,15 @@ export default function Header() {
                 {label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/firstwalkus/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
               onClick={() => setOpen(false)}
             >
               預約免費諮詢
-            </Link>
+            </a>
           </div>
         </div>
       )}

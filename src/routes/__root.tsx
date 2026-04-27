@@ -20,7 +20,10 @@ export const Route = createRootRoute({
       { name: 'og:title', content: 'First Walk US — De Anza College Application Service' },
       { name: 'og:description', content: 'Your trusted guide from Taiwan to Silicon Valley.' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'stylesheet', href: appCss },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+    ],
   }),
   shellComponent: RootDocument,
 })
