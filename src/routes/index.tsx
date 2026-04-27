@@ -56,7 +56,7 @@ function Home() {
               {/* Ring + card */}
               <div className="relative rounded-full bg-white/80 p-6 shadow-2xl ring-1 ring-gold/30 backdrop-blur-sm sm:p-8">
                 <img
-                  src="/firstwalkus logo (512 x 512 px)/2000x2000 初行firstwalkus_logo.svg"
+                  src="/logo-hero.svg"
                   alt="FirstWalkUS 初行"
                   className="w-56 h-56 sm:w-72 sm:h-72 object-contain"
                 />
