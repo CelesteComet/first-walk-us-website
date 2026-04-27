@@ -67,7 +67,7 @@ export const posts: BlogPost[] = [
     slug: 'transfer-path',
     date: '2026年4月',
     tag: '轉學攻略',
-    image: '/de anza student.jpg',
+    image: '/de-anza-student.jpg',
     title: '從 De Anza 轉學 UC：台灣學生的完整路徑指南',
     summary:
       '進入 De Anza 只是起點，轉學頂尖 UC 才是許多台灣學生的最終目標。本文整理出清晰的轉學路線圖，讓你兩年不走冤枉路。',
