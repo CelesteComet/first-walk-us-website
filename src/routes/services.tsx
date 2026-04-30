@@ -3,7 +3,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 export const Route = createFileRoute('/services')({ component: Services })
 
 const coreServices = [
-  { icon: '🎓', title: '申請 De Anza College', desc: '含 CCCApply 申請指導及遞交，全程陪你完成。' },
+  { icon: '🎓', title: '申請 De Anza College', desc: '含申請指導及遞交，全程陪你完成。' },
   { icon: '🛂', title: '學生簽證申請', desc: '協助 F-1 簽證申請流程，確保文件正確齊全。' },
   { icon: '🏠', title: '住宿安排協助', desc: '協助評估並安排宿舍、校外租屋或 Homestay。' },
   { icon: '✈️', title: '機場接機', desc: '首次抵達美國時，親自到機場接機。' },
