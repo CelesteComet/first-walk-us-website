@@ -18,55 +18,55 @@ function Home() {
   return (
     <main className="pb-20">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-cream-alt to-cream px-4 py-20 sm:py-32">
-        {/* Background blobs */}
-        <div className="pointer-events-none absolute -top-40 -right-40 h-[560px] w-[560px] rounded-full bg-gold/8" />
-        <div className="pointer-events-none absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-gold/6" />
-        <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-gold/5" />
+      <section className="relative overflow-hidden bg-cream">
+        {/* Decorative blobs */}
+        <div className="pointer-events-none absolute -top-24 -left-16 h-80 w-80 rounded-full bg-[#e8d5c0]/60 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-0 left-1/4 h-56 w-56 rounded-full bg-gold/10 blur-2xl" />
 
-        <div className="page-wrap relative flex flex-col-reverse items-center gap-14 sm:flex-row sm:items-center sm:gap-16">
+        <div className="flex flex-col sm:flex-row sm:min-h-[520px]">
 
           {/* Left: text */}
-          <div className="flex-1 text-center sm:text-left rise-in">
-            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-gold-deep">
+          <div
+            className="relative z-10 flex flex-col justify-center px-8 py-20 sm:py-24 sm:flex-1 sm:pr-16 rise-in"
+            style={{ paddingLeft: 'max(2rem, calc((100vw - 1080px) / 2 + 2rem))' }}
+          >
+            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-gold-deep">
               矽谷留學陪跑專家
             </span>
             <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-6">
-              每一步，<br />都有我陪你
+              <span className="whitespace-nowrap">留學美國的第一步，</span><br />我陪你走穩
             </h1>
-            <p className="text-ink-soft text-lg leading-9 mb-10 max-w-lg mx-auto sm:mx-0">
+            <p className="text-ink-soft text-lg leading-9 mb-10">
               從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
             </p>
-            <div className="flex flex-wrap justify-center sm:justify-start gap-3">
+            <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => setModalOpen(true)}
-                className="rounded-full bg-gold px-7 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
+                className="rounded-full bg-gold px-7 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
               >
                 預約免費諮詢
               </button>
               <Link
                 to="/services"
-                className="rounded-full border border-gold/60 px-7 py-3 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
+                className="rounded-full border border-gold/60 px-7 py-3 text-base font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
               >
                 了解服務內容
               </Link>
             </div>
           </div>
 
-          {/* Right: logo */}
-          <div className="flex-shrink-0 flex items-center justify-center">
-            {/* Outer glow */}
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold/25 to-transparent blur-2xl scale-110" />
-              {/* Ring + card */}
-              <div className="relative rounded-full bg-white/80 p-6 shadow-2xl ring-1 ring-gold/30 backdrop-blur-sm sm:p-8">
-                <img
-                  src="/logo-hero.svg"
-                  alt="FirstWalkUS 初行"
-                  className="w-56 h-56 sm:w-72 sm:h-72 object-contain"
-                />
-              </div>
-            </div>
+          {/* Right: full-height photo */}
+          <div className="relative sm:w-[42%] sm:flex-shrink-0">
+            {/* Gradient fade: cream → transparent, blending left edge of photo into background */}
+            <div
+              className="absolute inset-y-0 left-0 z-10 w-40 pointer-events-none"
+              style={{ background: 'linear-gradient(to right, #F3EFEA 0%, transparent 100%)' }}
+            />
+            <img
+              src="/hero image.png"
+              alt="De Anza College 校園"
+              className="w-full h-72 sm:h-full object-cover object-top"
+            />
           </div>
 
         </div>
@@ -76,7 +76,7 @@ function Home() {
       <section className="page-wrap px-4 py-16">
         <h2 className="font-serif text-2xl font-bold text-ink text-center">精選影片</h2>
         <span className="mx-auto mt-2 block h-0.5 w-10 rounded-full bg-gold" />
-        <p className="mt-4 mb-10 text-center text-sm text-ink-soft">請開啟 CC 字幕以顯示繁體中文</p>
+        <p className="mt-4 mb-10 text-center text-base text-ink-soft">請開啟 CC 字幕以顯示繁體中文</p>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {videos.map(({ id, title, titleZh }) => (
             <div key={id} className="group">
@@ -91,8 +91,8 @@ function Home() {
                   />
                 </div>
               </div>
-              <div className="mt-3 text-center">
-                <p className="font-serif font-bold text-ink text-lg">{titleZh}</p>
+              <div className="mt-4 text-center">
+                <p className="font-serif font-bold text-ink text-xl">{titleZh}</p>
               </div>
             </div>
           ))}
@@ -113,8 +113,8 @@ function Home() {
               <div className="flex h-16 w-16 items-center justify-center rounded-full border border-cream-alt bg-white text-2xl shadow-sm">
                 {icon}
               </div>
-              <p className="font-serif font-bold text-ink">{title}</p>
-              <p className="text-sm text-ink-soft leading-6">{desc}</p>
+              <p className="font-serif font-bold text-ink text-lg">{title}</p>
+              <p className="text-base text-ink-soft leading-8">{desc}</p>
             </div>
           ))}
         </div>
@@ -122,21 +122,22 @@ function Home() {
 
       {/* About strip */}
       <section className="bg-cream-alt py-16 px-4">
-        <div className="page-wrap flex flex-col gap-8 sm:flex-row sm:items-center">
+        <div className="page-wrap flex flex-col gap-10 sm:flex-row sm:items-center">
           <div className="flex-1">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gold mb-2">關於我</p>
-            <h2 className="font-serif text-2xl font-bold text-ink mb-4">陪伴，是我熱愛的事</h2>
-            <p className="text-sm text-ink-soft leading-7 mb-6 max-w-md">
-              我相信，每個人都有屬於自己的節奏與時區。我在這裡，陪你釐清方向、勇越挑戰，走出屬於你的這條路。
+            <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-2">關於我</p>
+            <h2 className="font-serif text-3xl font-bold text-ink mb-6">我走過這條路，所以懂第一步有多重要</h2>
+            <p className="text-base text-ink-soft leading-8 mb-8 max-w-lg">
+              我是 Alice，曾經從 De Anza College 轉學到 UC Berkeley。因為自己也走過社區大學到 UC 轉學這條路，我了解學生剛來美國時，面對的不只是申請與選課，還有語言、生活、交通、住宿、銀行開戶，以及心理上的不安。<br /><br />
+              現在我住在 Cupertino，離 De Anza 很近。我希望用自己的在地經驗與學長姐經驗，陪台灣學生把來美國的第一步走穩，也讓家長在遠方多一份安心。
             </p>
             <Link
               to="/about"
-              className="rounded-full border border-gold px-6 py-2.5 text-sm font-semibold text-gold no-underline transition hover:bg-gold hover:text-white inline-block"
+              className="rounded-full border border-gold px-8 py-3 text-base font-semibold text-gold no-underline transition hover:bg-gold hover:text-white inline-block"
             >
-              了解更多
+              了解 Alice 的故事
             </Link>
           </div>
-          <div className="h-56 w-56 flex-shrink-0 rounded-full overflow-hidden bg-gold/20 mx-auto sm:mx-0">
+          <div className="h-64 w-64 flex-shrink-0 rounded-full overflow-hidden bg-gold/20 mx-auto sm:mx-0 shadow-xl">
             <img src="/1.jpg" alt="Alice" className="h-full w-full object-cover object-top" />
           </div>
         </div>
@@ -164,10 +165,10 @@ function Home() {
               desc: '買車協助、駕照訓練、轉學申請指導、校外租房協助，依需求量身安排。',
             },
           ].map(({ icon, title, desc }) => (
-            <div key={title} className="rounded-2xl bg-white p-6 shadow-sm text-left flex flex-col">
-              <span className="text-2xl mb-3">{icon}</span>
-              <p className="font-serif font-bold text-ink mb-3">{title}</p>
-              <p className="text-sm text-ink-soft leading-6 mb-4 flex-1">{desc}</p>
+            <div key={title} className="rounded-2xl bg-white p-8 shadow-sm text-left flex flex-col">
+              <span className="text-3xl mb-4">{icon}</span>
+              <p className="font-serif font-bold text-ink text-lg mb-4">{title}</p>
+              <p className="text-base text-ink-soft leading-7 mb-6 flex-1">{desc}</p>
               <Link to="/services" className="text-sm font-semibold text-gold no-underline hover:text-gold-deep">
                 了解更多 →
               </Link>
@@ -177,20 +178,20 @@ function Home() {
       </section>
 
       {/* Quote */}
-      <section className="bg-cream-alt py-14 px-4 text-center">
-        <p className="font-serif text-xl text-ink max-w-lg mx-auto leading-9">
+      <section className="bg-cream-alt py-16 px-4 text-center">
+        <p className="font-serif text-2xl text-ink max-w-2xl mx-auto leading-relaxed">
           「孩子剛到美國時，最需要的不是自己硬撐，<br />而是有一位熟悉當地的人，在旁邊陪他一步步適應。」
         </p>
-        <p className="mt-4 text-sm text-ink-soft">— 給家長的一句話</p>
+        <p className="mt-6 text-base text-ink-soft">— 給家長的一句話</p>
       </section>
 
       {/* CTA */}
       <section className="page-wrap px-4 py-16 text-center">
-        <h2 className="font-serif text-2xl font-bold text-ink mb-2">準備好讓孩子安心走進美國生活了嗎？</h2>
-        <p className="text-sm text-ink-soft mb-8">從申請準備到抵達後適應，我陪孩子把第一步走穩。</p>
+        <h2 className="font-serif text-3xl font-bold text-ink mb-3">準備好讓孩子安心走進美國生活了嗎？</h2>
+        <p className="text-lg text-ink-soft mb-10">從申請準備到抵達後適應，我陪孩子把第一步走穩。</p>
         <button
           onClick={() => setModalOpen(true)}
-          className="rounded-full bg-gold px-8 py-3 text-sm font-semibold text-white transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
+          className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
         >
           預約免費諮詢
         </button>
