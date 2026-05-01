@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="page-wrap grid gap-8 sm:grid-cols-3">
         <div>
           <p className="mb-2 font-serif font-bold text-ink">初行 FirstWalkUS</p>
-          <p className="m-0 text-sm leading-6">陪你探索方向，建立信心，一步步走向理想的未來。</p>
+          <p className="m-0 text-sm leading-6">陪台灣學生走穩到美國的第一步，從 De Anza 申請到矽谷生活適應，一路有人在旁邊。</p>
         </div>
         <div>
           <p className="mb-2 text-sm font-bold text-ink">頁面連結</p>
