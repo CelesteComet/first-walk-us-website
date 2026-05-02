@@ -18,55 +18,53 @@ function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-cream">
-        {/* Decorative blobs */}
-        <div className="pointer-events-none absolute -top-24 -left-16 h-80 w-80 rounded-full bg-[#e8d5c0]/60 blur-3xl" />
-        <div className="pointer-events-none absolute bottom-0 left-1/4 h-56 w-56 rounded-full bg-gold/10 blur-2xl" />
-
-        <div className="flex flex-col sm:flex-row sm:min-h-[520px]">
-
-          {/* Left: text */}
-          <div
-            className="relative z-10 flex flex-col justify-center px-8 py-20 sm:py-24 sm:flex-1 sm:pr-12 rise-in"
-            style={{ paddingLeft: 'max(2rem, calc((100vw - 1080px) / 2 + 2rem))' }}
-          >
-            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-gold-deep">
-              矽谷留學陪跑專家
-            </span>
-            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl mb-6">
-              留學美國的第一步，<br />我陪你走穩
-            </h1>
-            <p className="text-ink-soft text-lg leading-9 mb-10">
-              從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <button
-                onClick={() => setModalOpen(true)}
-                className="rounded-full bg-gold px-7 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
-              >
-                預約免費諮詢
-              </button>
-              <Link
-                to="/services"
-                className="rounded-full border border-gold/60 px-7 py-3 text-base font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
-              >
-                了解服務內容
-              </Link>
-            </div>
-          </div>
-
-          {/* Right: full-height photo */}
-          <div className="relative sm:w-[38%] sm:flex-shrink-0">
-            {/* Gradient fade: cream → transparent, blending left edge of photo into background */}
-            <div
-              className="absolute inset-y-0 left-0 z-10 w-40 pointer-events-none"
-              style={{ background: 'linear-gradient(to right, #F3EFEA 0%, transparent 100%)' }}
-            />
+      <section className="px-4 py-8 sm:py-12">
+        <div className="page-wrap relative overflow-hidden rounded-3xl bg-cream shadow-sm flex flex-col sm:flex-row sm:min-h-[520px]">
+          
+          {/* Left: full-height photo */}
+          <div className="relative sm:w-[42%] sm:flex-shrink-0">
             <img
               src="/hero-student.png"
               alt="De Anza College 校園"
               className="w-full h-72 sm:h-full object-cover object-top"
             />
+            {/* Gradient fade: blends right edge of photo into the text background */}
+            <div
+              className="absolute inset-y-0 right-0 z-10 w-32 pointer-events-none hidden sm:block"
+              style={{ background: 'linear-gradient(to left, #F3EFEA 0%, transparent 100%)' }}
+            />
+            {/* Mobile fade: blends bottom edge of photo */}
+            <div
+              className="absolute inset-x-0 bottom-0 z-10 h-24 pointer-events-none sm:hidden"
+              style={{ background: 'linear-gradient(to top, #F3EFEA 0%, transparent 100%)' }}
+            />
+          </div>
+
+          {/* Right: text */}
+          <div className="relative z-10 flex flex-col justify-center px-8 py-16 sm:py-24 sm:flex-1 sm:pl-12 rise-in">
+            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-gold-deep self-start">
+              矽谷留學陪跑專家
+            </span>
+            <h1 className="font-serif text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl mb-6">
+              留學美國的第一步，<br />我陪你走穩
+            </h1>
+            <p className="text-ink-soft text-lg leading-9 mb-10 max-w-lg">
+              從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="/contact"
+                className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 no-underline inline-block"
+              >
+                預約免費諮詢
+              </Link>
+              <Link
+                to="/services"
+                className="rounded-full border border-gold/60 px-10 py-4 text-base font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
+              >
+                了解服務內容
+              </Link>
+            </div>
           </div>
 
         </div>
@@ -189,12 +187,12 @@ function Home() {
       <section className="page-wrap px-4 py-16 text-center">
         <h2 className="font-serif text-3xl font-bold text-ink mb-3">準備好讓孩子安心走進美國生活了嗎？</h2>
         <p className="text-lg text-ink-soft mb-10">從申請準備到抵達後適應，我陪孩子把第一步走穩。</p>
-        <button
-          onClick={() => setModalOpen(true)}
-          className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white transition hover:bg-gold-deep hover:-translate-y-0.5 border-0 cursor-pointer"
+        <Link
+          to="/contact"
+          className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"
         >
           預約免費諮詢
-        </button>
+        </Link>
       </section>
 
       <CalendlyModal open={modalOpen} onClose={() => setModalOpen(false)} />

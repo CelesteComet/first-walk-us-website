@@ -32,12 +32,13 @@ export default function Header() {
         </div>
 
         <div className="ml-auto flex items-center gap-3">
-          <button
-            className="hidden sm:inline-block rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white transition hover:bg-gold-deep border-0 cursor-pointer"
-            onClick={() => { setOpen(false); setModalOpen(true) }}
+          <Link
+            to="/contact"
+            className="hidden sm:inline-block rounded-full bg-gold px-5 py-2 text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
+            onClick={() => setOpen(false)}
           >
             預約免費諮詢
-          </button>
+          </Link>
 
           {/* Hamburger */}
           <button
@@ -67,12 +68,13 @@ export default function Header() {
                 {label}
               </Link>
             ))}
-            <button
-              className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-gold-deep border-0 cursor-pointer"
-              onClick={() => { setOpen(false); setModalOpen(true) }}
+            <Link
+              to="/contact"
+              className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-white no-underline transition hover:bg-gold-deep"
+              onClick={() => setOpen(false)}
             >
               預約免費諮詢
-            </button>
+            </Link>
           </div>
         </div>
       )}
