@@ -6,7 +6,7 @@ export const Route = createFileRoute('/')({ component: Home })
 
 const videos = [
   { id: 'lhcc9KkQWIg', title: '3 Myths about American Community College', titleZh: '美國社區大學三大迷思' },
-  { id: 'DAd6a-QFrvc', title: 'De Anza College Campus Tour', titleZh: 'De Anza 大學校園導覽 Campus tour' },
+  { id: 'DAd6a-QFrvc', title: 'De Anza College Campus Tour', titleZh: 'De Anza College 校園導覽' },
   { id: 'm8B8k0qboRU', title: 'Transfer to UC Berkeley', titleZh: '從加州社大轉入名校' },
   { id: 'I5JI4RFdtEc', title: 'UC Berkeley Admission Evaluator', titleZh: '柏克萊大學入學評審專訪' },
   { id: 'LEE_pXjpZWo', title: 'UC Berkeley Campus Tour', titleZh: '加州柏克萊大學導覽' },
@@ -27,14 +27,14 @@ function Home() {
 
           {/* Left: text */}
           <div
-            className="relative z-10 flex flex-col justify-center px-8 py-20 sm:py-24 sm:flex-1 sm:pr-16 rise-in"
+            className="relative z-10 flex flex-col justify-center px-8 py-20 sm:py-24 sm:flex-1 sm:pr-12 rise-in"
             style={{ paddingLeft: 'max(2rem, calc((100vw - 1080px) / 2 + 2rem))' }}
           >
             <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-gold-deep">
               矽谷留學陪跑專家
             </span>
-            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-6xl mb-6">
-              <span className="whitespace-nowrap">留學美國的第一步，</span><br />我陪你走穩
+            <h1 className="font-serif text-5xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl mb-6">
+              留學美國的第一步，<br />我陪你走穩
             </h1>
             <p className="text-ink-soft text-lg leading-9 mb-10">
               從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
@@ -56,14 +56,14 @@ function Home() {
           </div>
 
           {/* Right: full-height photo */}
-          <div className="relative sm:w-[42%] sm:flex-shrink-0">
+          <div className="relative sm:w-[38%] sm:flex-shrink-0">
             {/* Gradient fade: cream → transparent, blending left edge of photo into background */}
             <div
               className="absolute inset-y-0 left-0 z-10 w-40 pointer-events-none"
               style={{ background: 'linear-gradient(to right, #F3EFEA 0%, transparent 100%)' }}
             />
             <img
-              src="/hero image.png"
+              src="/hero-student.png"
               alt="De Anza College 校園"
               className="w-full h-72 sm:h-full object-cover object-top"
             />
