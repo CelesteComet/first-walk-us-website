@@ -24,9 +24,9 @@ function Home() {
           {/* Left: full-height photo */}
           <div className="relative sm:w-[42%] sm:flex-shrink-0">
             <img
-              src="/hero-student.png"
+              src="/DA_Fountain_View.png"
               alt="De Anza College 校園"
-              className="w-full h-72 sm:h-full object-cover object-top"
+              className="w-full h-72 sm:h-full object-cover object-center"
             />
             {/* Gradient fade: blends right edge of photo into the text background */}
             <div
