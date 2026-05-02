@@ -18,55 +18,63 @@ function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="px-4 py-8 sm:py-12">
-        <div className="page-wrap relative overflow-hidden rounded-3xl bg-cream shadow-sm flex flex-col sm:flex-row sm:min-h-[520px]">
-          
-          {/* Left: full-height photo */}
-          <div className="relative sm:w-[42%] sm:flex-shrink-0">
-            <img
-              src="/DA_Fountain_View.png"
-              alt="De Anza College 校園"
-              className="w-full h-72 sm:h-full object-cover object-center"
-            />
-            {/* Gradient fade: blends right edge of photo into the text background */}
-            <div
-              className="absolute inset-y-0 right-0 z-10 w-32 pointer-events-none hidden sm:block"
-              style={{ background: 'linear-gradient(to left, #F3EFEA 0%, transparent 100%)' }}
-            />
-            {/* Mobile fade: blends bottom edge of photo */}
-            <div
-              className="absolute inset-x-0 bottom-0 z-10 h-24 pointer-events-none sm:hidden"
-              style={{ background: 'linear-gradient(to top, #F3EFEA 0%, transparent 100%)' }}
-            />
-          </div>
-
-          {/* Right: text */}
-          <div className="relative z-10 flex flex-col justify-center px-8 py-16 sm:py-24 sm:flex-1 sm:pl-12 rise-in">
-            <span className="inline-block mb-5 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-gold-deep self-start">
-              矽谷留學陪跑專家
-            </span>
-            <h1 className="font-serif text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-6xl mb-6">
-              留學美國的第一步，<br />我陪你走穩
-            </h1>
-            <p className="text-ink-soft text-lg leading-9 mb-10 max-w-lg">
-              從台灣到矽谷，協助申請 De Anza College、簽證辦理、機場接機，到入美後 3 個月全方位生活陪伴。
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                to="/contact"
-                className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white shadow-sm transition hover:bg-gold-deep hover:-translate-y-0.5 no-underline inline-block"
-              >
-                預約免費諮詢
-              </Link>
-              <Link
-                to="/services"
-                className="rounded-full border border-gold/60 px-10 py-4 text-base font-semibold text-gold no-underline transition hover:bg-gold hover:text-white hover:border-gold inline-block"
-              >
-                了解服務內容
-              </Link>
+      <section className="px-4 py-8 sm:py-16">
+        <div className="page-wrap">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-cream shadow-[0_20px_50px_rgba(0,0,0,0.04)] flex flex-col lg:flex-row lg:items-stretch lg:min-h-[640px]">
+            
+            {/* Left: Image */}
+            <div className="relative h-72 sm:h-96 lg:h-auto lg:w-1/2 overflow-hidden">
+              <img
+                src="/hero-student.png"
+                alt="De Anza College 學生"
+                className="w-full h-full object-cover object-center transition-transform duration-1000 hover:scale-105"
+              />
+              {/* Overlay for depth */}
+              <div className="absolute inset-0 bg-ink/5 pointer-events-none" />
+              {/* Desktop side fade */}
+              <div
+                className="absolute inset-y-0 right-0 z-10 w-32 pointer-events-none hidden lg:block"
+                style={{ background: 'linear-gradient(to left, var(--color-cream) 0%, transparent 100%)' }}
+              />
+              {/* Mobile bottom fade */}
+              <div
+                className="absolute inset-x-0 bottom-0 z-10 h-32 pointer-events-none lg:hidden"
+                style={{ background: 'linear-gradient(to top, var(--color-cream) 0%, transparent 100%)' }}
+              />
             </div>
-          </div>
 
+            {/* Right: Content */}
+            <div className="relative z-20 flex flex-col justify-center px-8 py-16 sm:px-16 lg:px-20 lg:flex-1 rise-in">
+              <div className="mb-8 inline-flex items-center self-start rounded-full bg-gold/10 px-5 py-2 text-[11px] font-bold uppercase tracking-[0.2em] text-gold-deep ring-1 ring-gold/20">
+                矽谷留學陪跑專家
+              </div>
+              
+              <h1 className="font-serif text-3xl font-bold leading-[1.15] text-ink sm:text-5xl lg:text-[3.8rem] mb-8 tracking-tighter">
+                <span className="block lg:whitespace-nowrap">留學美國的第一步，</span>
+                <span className="block text-gold">我陪你走穩。</span>
+              </h1>
+              
+              <p className="text-ink-soft text-lg sm:text-xl leading-relaxed mb-12 max-w-lg opacity-90">
+                從台灣到矽谷，我們協助你處理申請、簽證與接機，並在抵達後提供全方位陪伴，讓你的留學生活有個完美的開始。
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-5">
+                <Link
+                  to="/contact"
+                  className="rounded-full bg-gold px-12 py-5 text-center text-lg font-bold text-white shadow-[0_10px_20px_rgba(215,167,122,0.25)] transition-all hover:bg-gold-deep hover:shadow-[0_15px_30px_rgba(215,167,122,0.35)] hover:-translate-y-1 active:scale-95 no-underline"
+                >
+                  預約免費諮詢
+                </Link>
+                <Link
+                  to="/services"
+                  className="rounded-full border-2 border-gold/20 px-12 py-5 text-center text-lg font-bold text-gold transition-all hover:bg-white hover:border-gold hover:shadow-sm active:scale-95 no-underline"
+                >
+                  了解服務內容
+                </Link>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
