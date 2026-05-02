@@ -16,7 +16,7 @@ function Home() {
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
-    <main className="pb-20">
+    <main>
       {/* Hero */}
       <section className="relative overflow-hidden bg-cream">
         {/* Decorative blobs */}
