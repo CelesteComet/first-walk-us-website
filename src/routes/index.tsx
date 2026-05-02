@@ -25,9 +25,9 @@ function Home() {
             {/* Left: Image */}
             <div className="relative h-72 sm:h-96 lg:h-auto lg:w-1/2 overflow-hidden">
               <img
-                src="/hero-student.png"
+                src="/young_girl_deanza.png"
                 alt="De Anza College 學生"
-                className="w-full h-full object-cover object-center transition-transform duration-1000 hover:scale-105"
+                className="w-full h-full object-cover object-[center_20%] transition-transform duration-1000 hover:scale-105"
               />
               {/* Overlay for depth */}
               <div className="absolute inset-0 bg-ink/5 pointer-events-none" />
@@ -79,29 +79,63 @@ function Home() {
       </section>
 
       {/* Videos */}
-      <section className="page-wrap px-4 py-16">
-        <h2 className="font-serif text-2xl font-bold text-ink text-center">精選影片</h2>
-        <span className="mx-auto mt-2 block h-0.5 w-10 rounded-full bg-gold" />
-        <p className="mt-4 mb-10 text-center text-base text-ink-soft">請開啟 CC 字幕以顯示繁體中文</p>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-          {videos.map(({ id, title, titleZh }) => (
-            <div key={id} className="group">
-              <div className="overflow-hidden rounded-2xl shadow-sm transition-shadow hover:shadow-md">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/${id}`}
-                    title={title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+      <section className="bg-[#FAF9F6] py-24 px-4">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl sm:text-5xl font-bold text-ink mb-6 tracking-tight">精選影片分享</h2>
+            <div className="mx-auto h-1.5 w-16 rounded-full bg-gold mb-8" />
+            <p className="text-lg sm:text-xl text-ink-soft max-w-3xl mx-auto leading-relaxed">
+              透過學長姐的鏡頭，帶你直擊 De Anza College 校園生活與 UC 轉學秘辛。<br className="hidden sm:block" />
+              <span className="text-gold font-bold">※ 請開啟 YouTube CC 字幕以顯示繁體中文</span>
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {/* Featured Video: Full Width */}
+            <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all hover:shadow-[0_30px_70px_rgba(0,0,0,0.15)]">
+              <div className="grid grid-cols-1 lg:grid-cols-5">
+                <div className="lg:col-span-3">
+                  <div className="relative w-full aspect-video bg-black">
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${videos[0].id}`}
+                      title={videos[0].title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+                <div className="lg:col-span-2 p-8 sm:p-12 flex flex-col justify-center bg-white">
+                  <div className="mb-4 inline-flex items-center self-start rounded-full bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold-deep">
+                    熱門推薦
+                  </div>
+                  <h3 className="font-serif text-2xl sm:text-4xl font-bold text-ink mb-4 leading-tight">{videos[0].titleZh}</h3>
+                  <p className="text-ink-soft text-base sm:text-lg leading-relaxed">{videos[0].title}</p>
                 </div>
               </div>
-              <div className="mt-4 text-center">
-                <p className="font-serif font-bold text-ink text-xl">{titleZh}</p>
-              </div>
             </div>
-          ))}
+
+            {/* Others Grid: 2x2 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+              {videos.slice(1).map(({ id, title, titleZh }) => (
+                <div key={id} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                  <div className="relative w-full aspect-video bg-black">
+                    <iframe
+                      className="absolute inset-0 w-full h-full"
+                      src={`https://www.youtube.com/embed/${id}`}
+                      title={title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="font-serif font-bold text-ink text-xl mb-2 group-hover:text-gold transition-colors">{titleZh}</h4>
+                    <p className="text-ink-soft text-xs tracking-wide uppercase opacity-80">{title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

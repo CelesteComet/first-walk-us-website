@@ -44,6 +44,9 @@ function About() {
             {/* Path */}
             <div className="pt-10 border-t border-cream-alt">
               <p className="font-serif text-2xl font-bold text-ink mb-6">從 De Anza 到 UC Berkeley，再到矽谷灣區生活</p>
+              <div className="mb-8 overflow-hidden rounded-2xl shadow-sm border border-cream-alt">
+                <img src="/carousel-3.png" alt="UC Berkeley Campus" className="w-full h-48 sm:h-72 object-cover" />
+              </div>
               <div className="space-y-6">
                 <p>2010 年，我第一次來到美國，在 De Anza College 開始我的大一生活，並在 2012 年成功轉學到 UC Berkeley 以及其他所有申請的 5 所 UC 學校。</p>
                 <p>畢業後，我曾在矽谷灣區新創公司工作，也曾回台灣擔任國際品牌行銷經理。2019 年，我再次回到美國矽谷灣區生活。</p>
@@ -65,17 +68,34 @@ function About() {
             {/* Why FirstWalkUS */}
             <div className="pt-10 border-t border-cream-alt">
               <p className="font-serif text-2xl font-bold text-ink mb-6">為什麼創立 FirstWalkUS？</p>
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <p>很多台灣家長在準備孩子出國時，會把重點放在「申請學校」和「簽證」。但孩子真正開始感到不安，往往是在抵達美國之後。</p>
-                <p>到了當地，學生會開始面對許多生活與開學細節：</p>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 list-none p-0 m-0">
-                  <li>• 哪一間銀行對留學生比較實用？</li>
-                  <li>• 電話卡一定要辦大公司才比較好嗎？</li>
-                  <li>• 第一學期如何準備選課避免進度延遲？</li>
-                  <li>• 哪些校園資源是必學的？</li>
-                  <li>• 附近哪裡買生活用品方便又划算？</li>
-                  <li>• 想家、孤單、不知道問誰時該辦？</li>
-                </ul>
+                
+                <div className="py-8 border-y border-gold/10">
+                  <p className="text-sm font-bold text-gold uppercase tracking-wider mb-8 text-center sm:text-left">抵達當地後，學生必須面對的真實細節：</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                    {[
+                      { q: '哪一間銀行對留學生比較實用？', icon: '🏦' },
+                      { q: '電話卡一定要辦大公司才比較好嗎？', icon: '📱' },
+                      { q: '第一學期如何準備選課避免進度延遲？', icon: '📚' },
+                      { q: '哪些校園資源是留學生可以多加利用的？', icon: '🏫' },
+                      { q: '附近哪裡買生活用品方便又划算？', icon: '🛒' },
+                      { q: '想家、孤單、不知道問誰時該怎麼辦？', icon: '🤝' },
+                    ].map((item) => (
+                      <div key={item.q} className="group flex items-start gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-cream flex items-center justify-center text-sm shadow-inner transition-colors group-hover:bg-gold/10">
+                          {item.icon}
+                        </div>
+                        <div className="flex-1 pt-1">
+                          <p className="text-sm font-medium text-ink leading-relaxed border-b border-gold/5 pb-2">
+                            {item.q}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 <p>這些事情看似不大，但對第一次來美國的學生來說，如果身邊沒有熟悉當地的人可以問，就會變得很有壓力。</p>
                 <p>我創立 FirstWalkUS，是希望用學長姐的經驗，陪台灣學生走過剛來美國最陌生、最需要安全感的那一段路。</p>
               </div>
@@ -84,6 +104,9 @@ function About() {
             {/* Not an agent */}
             <div className="pt-10 border-t border-cream-alt">
               <p className="font-serif text-2xl font-bold text-ink mb-6">我不是仲介，我是過來人</p>
+              <div className="mb-8 overflow-hidden rounded-2xl shadow-sm border border-cream-alt">
+                <img src="/5.jpg" alt="Supportive environment" className="w-full h-48 sm:h-72 object-cover" />
+              </div>
               <div className="space-y-6">
                 <p>FirstWalkUS 不是冷冰冰的傳統代辦，也不是替學生決定人生方向的顧問服務。</p>
                 <p>我想提供的，是更貼近學生生活的在地陪伴：在學生最需要支持的初期，陪他把生活、開學與適應的第一步慢慢走穩。</p>
@@ -101,15 +124,15 @@ function About() {
       </section>
 
       <section className="page-wrap px-4 py-14">
-        <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center max-w-3xl mx-auto mb-12">
+        <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center max-w-4xl mx-auto mb-16">
           {[
             { number: '16 年', label: '美國在地生活' },
             { number: 'UC Berkeley', label: '轉學成功經驗' },
             { number: 'De Anza College', label: '學姊親身經歷' },
           ].map(({ number, label }) => (
-            <div key={label} className="flex flex-col items-center justify-center rounded-2xl bg-white px-2 py-6 shadow-sm sm:px-4 h-full">
-              <p className="font-serif text-xl sm:text-2xl font-bold text-gold mb-2 leading-tight">{number}</p>
-              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-widest text-ink-soft leading-relaxed">{label}</p>
+            <div key={label} className="flex flex-col items-center justify-center rounded-3xl bg-white px-3 py-8 shadow-[0_10px_30px_rgba(0,0,0,0.03)] sm:px-6 sm:py-10 h-full border border-cream-alt">
+              <p className="font-serif text-2xl sm:text-4xl font-bold text-gold mb-3 leading-tight tracking-tight">{number}</p>
+              <p className="text-[11px] sm:text-lg font-bold text-ink-soft tracking-normal sm:tracking-wide">{label}</p>
             </div>
           ))}
         </div>
