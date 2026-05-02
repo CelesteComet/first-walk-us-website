@@ -19,7 +19,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-black/10 bg-cream/95 backdrop-blur-md">
       <nav className="page-wrap flex items-center gap-6 px-4 py-4">
         <Link to="/" className="flex-shrink-0 no-underline" onClick={() => setOpen(false)}>
-          <img src="/logo-header.svg" alt="FirstWalkUS" className="h-10 w-auto" />
+          <img
+            src="/justicon_firstwalkus_logo.png"
+            alt="FirstWalkUS"
+            className="h-10 w-auto"
+            width={160}
+            height={160}
+          />
         </Link>
 
         {/* Desktop links */}

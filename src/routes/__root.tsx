@@ -12,6 +12,9 @@ function RootDocument() {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="144x144" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="stylesheet" href={appCss} />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <HeadContent />
