@@ -94,7 +94,7 @@ export const posts: BlogPost[] = [
     slug: 'parents-guide-safety-cupertino',
     date: '2026年5月',
     tag: '家長專區',
-    image: '/DAC_Aerial-2.jpg',
+    image: '/cupertino_library_dawn.jpeg',
     title: '家長最關心的事：庫比蒂諾（Cupertino）的治安與生活環境',
     summary:
       '送孩子出國，安全永遠是家長心中的第一順位。本文帶您深入了解 De Anza College 所在的庫比蒂諾市，為何是全美最適合求學的優質社區之一。',

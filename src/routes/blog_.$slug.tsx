@@ -32,13 +32,13 @@ function BlogPost() {
 
       {/* Article body */}
       <article className="page-wrap px-4 py-12 max-w-2xl mx-auto">
-        <p className="text-base text-ink-soft leading-8 mb-10 border-l-2 border-gold pl-5">{post.summary}</p>
+        <p className="text-lg text-ink-soft leading-9 mb-10 border-l-2 border-gold pl-5">{post.summary}</p>
         <div className="flex flex-col gap-10">
           {post.content.map(({ heading, body }) => (
             <div key={heading}>
-              <h2 className="font-serif text-xl font-bold text-ink mb-3">{heading}</h2>
+              <h2 className="font-serif text-2xl font-bold text-ink mb-3">{heading}</h2>
               <span className="mb-4 block h-0.5 w-8 rounded-full bg-gold" />
-              <p className="text-sm text-ink-soft leading-8">{body}</p>
+              <p className="text-lg text-ink-soft leading-9">{body}</p>
             </div>
           ))}
         </div>

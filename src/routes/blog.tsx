@@ -16,7 +16,7 @@ function Blog() {
 
       <section className="page-wrap px-4 pb-16">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 max-w-5xl mx-auto">
-          {posts.map((post) => (
+          {[...posts].reverse().map((post) => (
             <Link
               key={post.slug}
               to="/blog/$slug"
