@@ -27,7 +27,7 @@ function Contact() {
       icon: <Calendar className="w-5 h-5" />,
       label: '諮詢預約',
       value: '點擊預約 30 分鐘諮詢',
-      href: 'https://calendly.com/firstwalkus/30min',
+      href: 'https://calendar.app.google/1ZCsH6U8b1oAfqjY9',
     },
   ]
 

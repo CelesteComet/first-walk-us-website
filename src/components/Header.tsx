@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
-import { CalendlyModal } from './CalendlyModal'
+import { BookingModal } from './BookingModal'
 
 const navLinks = [
   { to: '/', label: '首頁' },
@@ -85,7 +85,7 @@ export default function Header() {
         </div>
       )}
     </header>
-    <CalendlyModal open={modalOpen} onClose={() => setModalOpen(false)} />
+    <BookingModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </>
   )
 }

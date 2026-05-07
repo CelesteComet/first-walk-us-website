@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState } from 'react'
-import { CalendlyModal } from '#/components/CalendlyModal'
+import { BookingModal } from '#/components/BookingModal'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -237,7 +237,7 @@ function Home() {
         </Link>
       </section>
 
-      <CalendlyModal open={modalOpen} onClose={() => setModalOpen(false)} />
+      <BookingModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </main>
   )
 }
