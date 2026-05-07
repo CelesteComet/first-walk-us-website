@@ -10,6 +10,17 @@ function RootDocument() {
   return (
     <html lang="en" suppressHydrationWarning className="min-h-full">
       <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7315CH7QM" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-G7315CH7QM');
+            `,
+          }}
+        />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
