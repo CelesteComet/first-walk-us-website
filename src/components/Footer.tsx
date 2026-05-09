@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <p className="text-xs font-semibold uppercase tracking-widest text-gold">頁面連結</p>
           <ul className="m-0 list-none space-y-2.5 p-0 text-sm">
-            {[['/', '首頁'], ['/about', '關於我'], ['/services', '服務項目'], ['/contact', '聯絡我']].map(([to, label]) => (
+            {[['/', '首頁'], ['/about', '關於 Alice'], ['/services', '服務項目'], ['/contact', '聯絡我']].map(([to, label]) => (
               <li key={to}>
                 <Link to={to as '/'} className="text-cream/70 no-underline hover:text-cream transition-colors">
                   {label}

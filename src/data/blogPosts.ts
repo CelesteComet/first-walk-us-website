@@ -175,7 +175,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-application-timeline-taiwan',
     date: '2026年5月',
     tag: '申請指南',
-    image: '/carousel-1.png',
+    image: '/howtoapply.png',
     title: 'De Anza College 台灣學生申請時間表：高中畢業後怎麼安排？',
     summary:
       '準備申請 De Anza College 的台灣學生與家長，可以如何安排高中畢業、英文成績、申請文件、I-20、簽證、選課與抵達美國時間？這篇用家長看得懂的方式整理 De Anza College 申請時間表。',

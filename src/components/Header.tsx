@@ -4,7 +4,7 @@ import { BookingModal } from './BookingModal'
 
 const navLinks = [
   { to: '/', label: '首頁' },
-  { to: '/about', label: '關於我' },
+  { to: '/about', label: '關於 Alice' },
   { to: '/services', label: '服務項目' },
   { to: '/blog', label: '部落格' },
   { to: '/contact', label: '聯絡我' },

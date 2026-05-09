@@ -16,7 +16,7 @@ function About() {
             />
           </div>
         </div>
-        <p className="text-base font-semibold uppercase tracking-widest text-gold mb-3">關於 Alice</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3">關於 Alice</p>
         <h1 className="font-serif text-3xl font-bold text-ink mb-6 sm:text-5xl leading-tight">
           我走過 De Anza 轉學路，<br className="hidden sm:block" />所以懂第一步有多重要
         </h1>
@@ -126,13 +126,13 @@ function About() {
       <section className="page-wrap px-4 py-14">
         <div className="grid grid-cols-3 gap-3 sm:gap-6 text-center max-w-4xl mx-auto mb-16">
           {[
-            { number: '16 年', label: '美國在地生活' },
-            { number: 'UC Berkeley', label: '轉學成功經驗' },
-            { number: 'De Anza College', label: '學姊親身經歷' },
+            { number: '16+ 年', label: '美國在地生活' },
+            { number: 'UC Berkeley', label: '成功轉學經驗' },
+            { number: 'De Anza', label: '社大親身經歷' },
           ].map(({ number, label }) => (
             <div key={label} className="flex flex-col items-center justify-center rounded-3xl bg-white px-3 py-8 shadow-[0_10px_30px_rgba(0,0,0,0.03)] sm:px-6 sm:py-10 h-full border border-cream-alt">
               <p className="font-serif text-2xl sm:text-4xl font-bold text-gold mb-3 leading-tight tracking-tight">{number}</p>
-              <p className="text-[11px] sm:text-lg font-bold text-ink-soft tracking-normal sm:tracking-wide">{label}</p>
+              <p className="text-[13px] sm:text-lg font-bold text-ink-soft tracking-normal sm:tracking-wide">{label}</p>
             </div>
           ))}
         </div>
