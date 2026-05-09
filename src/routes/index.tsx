@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { useState } from 'react'
 import { BookingModal } from '#/components/BookingModal'
+import { Map, GraduationCap, Heart, Star, Sparkles, Layout } from 'lucide-react'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -54,7 +55,7 @@ function Home() {
                 <span className="block text-gold">我陪你走穩。</span>
               </h1>
               
-              <p className="text-ink-soft text-lg sm:text-xl leading-relaxed mb-12 max-w-lg opacity-90">
+              <p className="text-ink text-lg sm:text-xl leading-relaxed mb-12 max-w-lg opacity-80">
                 從台灣到矽谷，我們協助你處理申請、簽證與接機，並在抵達後提供全方位陪伴，讓你的留學生活有個完美的開始。
               </p>
               
@@ -84,7 +85,7 @@ function Home() {
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl sm:text-5xl font-bold text-ink mb-6 tracking-tight">精選影片分享</h2>
             <div className="mx-auto h-1.5 w-16 rounded-full bg-gold mb-8" />
-            <p className="text-lg sm:text-xl text-ink-soft max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-ink max-w-3xl mx-auto leading-relaxed opacity-80">
               透過學長姐的鏡頭，帶你直擊 De Anza College 校園生活與 UC 轉學秘辛。<br className="hidden sm:block" />
               <span className="text-gold font-bold">※ 請開啟 YouTube CC 字幕以顯示繁體中文</span>
             </p>
@@ -92,7 +93,7 @@ function Home() {
 
           <div className="space-y-12">
             {/* Featured Video: Full Width */}
-            <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] transition-all hover:shadow-[0_30px_70px_rgba(0,0,0,0.15)]">
+            <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-[0_20px_50_rgba(0,0,0,0.08)] transition-all hover:shadow-[0_30px_70px_rgba(0,0,0,0.15)]">
               <div className="grid grid-cols-1 lg:grid-cols-5">
                 <div className="lg:col-span-3">
                   <div className="relative w-full aspect-video bg-black">
@@ -110,7 +111,7 @@ function Home() {
                     熱門推薦
                   </div>
                   <h3 className="font-serif text-2xl sm:text-4xl font-bold text-ink mb-4 leading-tight">{videos[0].titleZh}</h3>
-                  <p className="text-ink-soft text-base sm:text-lg leading-relaxed">{videos[0].title}</p>
+                  <p className="text-ink text-base sm:text-lg leading-relaxed opacity-70">{videos[0].title}</p>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@ function Home() {
                   </div>
                   <div className="p-6">
                     <h4 className="font-serif font-bold text-ink text-xl mb-2 group-hover:text-gold transition-colors">{titleZh}</h4>
-                    <p className="text-ink-soft text-xs tracking-wide uppercase opacity-80">{title}</p>
+                    <p className="text-ink text-xs tracking-wide uppercase opacity-60">{title}</p>
                   </div>
                 </div>
               ))}
@@ -145,16 +146,16 @@ function Home() {
         <span className="mx-auto mt-2 mb-10 block h-0.5 w-10 rounded-full bg-gold" />
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           {[
-            { icon: '🧭', title: '申請與時間表規劃', desc: '協助學生與家長了解De Anza College 申請流程、重要日期、文件準備與來美安排，讓每一步都知道該在什麼時候完成。' },
-            { icon: '🌱', title: '選課與開學準備', desc: '協助學生了解第一學期選課、英文數學程度評估、學校輔導員預約與初步教育計畫，把開學第一步走穩，不是一到美國才慌張摸索。' },
-            { icon: '🏔️', title: '落地與持續陪伴', desc: '抵達美國後，從接機、銀行開戶、電話卡、校園導覽到生活採買，陪學生熟悉環境；並透過每週關心與生活陪伴，用學長姐經驗陪孩子適應美國生活與學習節奏。' },
+            { icon: <Map className="w-8 h-8 text-gold" />, title: '申請與時間表規劃', desc: '協助學生與家長了解De Anza College 申請流程、重要日期、文件準備與來美安排，讓每一步都知道該在什麼時候完成。' },
+            { icon: <GraduationCap className="w-8 h-8 text-gold" />, title: '選課與開學準備', desc: '協助學生了解第一學期選課、英文數學程度評估、學校輔導員預約與初步教育計畫，把開學第一步走穩，不是一到美國才慌張摸索。' },
+            { icon: <Heart className="w-8 h-8 text-gold" />, title: '落地與持續陪伴', desc: '抵達美國後，從接機、銀行開戶、電話卡、校園導覽到生活採買，陪學生熟悉環境；並透過每週關心與生活陪伴，用學長姐經驗陪孩子適應美國生活與學習節奏。' },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="flex flex-col items-center gap-3">
-              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-cream-alt bg-white text-2xl shadow-sm">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-cream-alt bg-white shadow-sm">
                 {icon}
               </div>
               <p className="font-serif font-bold text-ink text-lg">{title}</p>
-              <p className="text-base text-ink-soft leading-8">{desc}</p>
+              <p className="text-base text-ink leading-8 opacity-80">{desc}</p>
             </div>
           ))}
         </div>
@@ -166,7 +167,7 @@ function Home() {
           <div className="flex-1">
             <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-2">關於我</p>
             <h2 className="font-serif text-3xl font-bold text-ink mb-6">我走過這條路，所以懂第一步有多重要</h2>
-            <p className="text-base text-ink-soft leading-8 mb-8 max-w-lg">
+            <p className="text-base text-ink leading-8 mb-8 max-w-lg opacity-80">
               我是 Alice，曾經從 De Anza College 轉學到 UC Berkeley。因為自己也走過社區大學到 UC 轉學這條路，我了解學生剛來美國時，面對的不只是申請與選課，還有語言、生活、交通、住宿、銀行開戶，以及心理上的不安。<br /><br />
               現在我住在 Cupertino，離 De Anza 很近。我希望用自己的在地經驗與學長姐經驗，陪台灣學生把來美國的第一步走穩，也讓家長在遠方多一份安心。
             </p>
@@ -190,25 +191,25 @@ function Home() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {[
             {
-              icon: '🎓',
+              icon: <Layout className="w-8 h-8 text-gold" />,
               title: '核心服務套餐',
               desc: '申請 De Anza、簽證辦理、機場接機、住宿安排，及入美 3 個月全方位生活支援。',
             },
             {
-              icon: '📅',
+              icon: <Star className="w-8 h-8 text-gold" />,
               title: '延伸月費方案',
               desc: '3 個月後仍需支援？每月方案包含每週 check-in、採購陪同及緊急聯絡人服務。',
             },
             {
-              icon: '✨',
+              icon: <Sparkles className="w-8 h-8 text-gold" />,
               title: '加購服務',
               desc: '買車協助、駕照訓練、轉學申請指導、校外租房協助，依需求量身安排。',
             },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="rounded-2xl bg-white p-8 shadow-sm text-left flex flex-col">
-              <span className="text-3xl mb-4">{icon}</span>
+              <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-gold/10 text-gold">{icon}</span>
               <p className="font-serif font-bold text-ink text-lg mb-4">{title}</p>
-              <p className="text-base text-ink-soft leading-7 mb-6 flex-1">{desc}</p>
+              <p className="text-base text-ink leading-7 mb-6 flex-1 opacity-80">{desc}</p>
               <Link to="/services" className="text-sm font-semibold text-gold no-underline hover:text-gold-deep">
                 了解更多 →
               </Link>
@@ -222,13 +223,13 @@ function Home() {
         <p className="font-serif text-2xl text-ink max-w-2xl mx-auto leading-relaxed">
           「孩子剛到美國時，最需要的不是自己硬撐，<br />而是有一位熟悉當地的人，在旁邊陪他一步步適應。」
         </p>
-        <p className="mt-6 text-base text-ink-soft">— 給家長的一句話</p>
+        <p className="mt-6 text-base text-ink">— 給家長的一句話</p>
       </section>
 
       {/* CTA */}
       <section className="page-wrap px-4 py-16 text-center">
         <h2 className="font-serif text-3xl font-bold text-ink mb-3">準備好讓孩子安心走進美國生活了嗎？</h2>
-        <p className="text-lg text-ink-soft mb-10">從申請準備到抵達後適應，我陪孩子把第一步走穩。</p>
+        <p className="text-lg text-ink mb-10 opacity-80">從申請準備到抵達後適應，我陪孩子把第一步走穩。</p>
         <Link
           to="/contact"
           className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-white no-underline transition hover:bg-gold-deep hover:-translate-y-0.5 inline-block"

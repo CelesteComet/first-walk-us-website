@@ -175,7 +175,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-application-timeline-taiwan',
     date: '2026年5月',
     tag: '申請指南',
-    image: '/howtoapply.png',
+    image: '/Blog post banner/timeline1.png',
     title: 'De Anza College 台灣學生申請時間表：高中畢業後怎麼安排？',
     summary:
       '準備申請 De Anza College 的台灣學生與家長，可以如何安排高中畢業、英文成績、申請文件、I-20、簽證、選課與抵達美國時間？這篇用家長看得懂的方式整理 De Anza College 申請時間表。',
@@ -246,7 +246,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-first-quarter-registration-guide',
     date: '2026年5月',
     tag: '選課攻略',
-    image: '/carousel-2.png',
+    image: '/Blog post banner/post1.png',
     title: 'De Anza College 第一學期選課怎麼準備？家長也看得懂的版本',
     summary:
       'De Anza College 第一學期選課不是隨便選幾堂課就好。這篇用台灣家長看得懂的方式，說明新生說明會、英文與數學程度評估、教育計畫、英文數學課與轉 UC 路線如何影響第一學期安排。',
@@ -318,10 +318,10 @@ export const posts: BlogPost[] = [
     ],
   },
   {
-    slug: 'de-anza-english-placement-taiwan-guide',
+    slug: 'de-anza-english-placement-guide',
     date: '2026年5月',
     tag: '英文培訓',
-    image: '/carousel-3.png',
+    image: '/Blog post banner/Englishclass_deanza.png',
     title: 'De Anza College 英文程度評估是什麼？台灣學生要怎麼準備？',
     summary:
       'De Anza College 英文程度評估會影響台灣學生第一學期英文課、ESL 或可轉學英文課的安排。這篇用家長看得懂的方式說明 placement、English、ESL 與準備方向。',
