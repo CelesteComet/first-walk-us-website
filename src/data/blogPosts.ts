@@ -121,7 +121,7 @@ export const posts: BlogPost[] = [
     slug: 'financial-planning-for-de-anza',
     date: '2026年5月',
     tag: '留學預算',
-    image: '/carousel-5.png',
+    image: '/Blog post banner/Englishclass_deanza.png',
     title: '留學預算大解密：送孩子去 De Anza College，家長該準備多少錢？',
     summary:
       '除了學費，還有哪些隱藏開銷？從住宿、生活費到雜費支出，我們為台灣家長整理出最真實的預算清單與財務準備建議。',
