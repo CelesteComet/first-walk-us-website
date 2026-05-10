@@ -130,9 +130,9 @@ function About() {
             { number: 'UC Berkeley', label: '成功轉學經驗' },
             { number: 'De Anza', label: '社大親身經歷' },
           ].map(({ number, label }) => (
-            <div key={label} className="flex flex-col items-center justify-center rounded-3xl bg-white px-3 py-8 shadow-[0_10px_30px_rgba(0,0,0,0.03)] sm:px-6 sm:py-10 h-full border border-cream-alt">
-              <p className="font-serif text-2xl sm:text-4xl font-bold text-gold mb-3 leading-tight tracking-tight">{number}</p>
-              <p className="text-[13px] sm:text-lg font-bold text-ink-soft tracking-normal sm:tracking-wide">{label}</p>
+            <div key={label} className="flex flex-col items-center justify-center rounded-3xl bg-white min-w-0 overflow-hidden px-3 py-8 shadow-[0_10px_30px_rgba(0,0,0,0.03)] sm:px-6 sm:py-10 h-full border border-cream-alt">
+              <p className="font-serif text-base sm:text-4xl font-bold text-gold mb-2 leading-tight tracking-tight text-center break-words w-full">{number}</p>
+              <p className="text-[11px] sm:text-lg font-bold text-ink-soft tracking-normal sm:tracking-wide text-center">{label}</p>
             </div>
           ))}
         </div>

@@ -135,7 +135,7 @@ function Services() {
       {/* Add-ons */}
       <section className="page-wrap px-4 py-24">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
-          <div className="lg:w-1/3 sticky top-32">
+          <div className="lg:w-1/3 lg:sticky lg:top-32">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink mb-6">加購服務</h2>
             <p className="text-ink text-lg leading-relaxed mb-8">
               針對個別特殊需求，我們也提供高度客製化的加購服務，確保學生在美國生活的方方面面都能獲得專業指引。

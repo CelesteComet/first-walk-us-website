@@ -121,10 +121,10 @@ export const posts: BlogPost[] = [
     slug: 'financial-planning-for-de-anza',
     date: '2026年5月',
     tag: '留學預算',
-    image: '/Blog post banner/budgetplanning_deanza_taiwan.png',
+    image: '/Blog_post_banner/budget_1.png',
     title: '留學預算大解密：送孩子去 De Anza College，家長該準備多少錢？',
     summary:
-      '除了學費，還有哪些隱藏開銷？從住宿、生活費到雜費支出，我們為台灣家長整理出最真實的預算清單與財務準備建議。',
+      '除了學費，還有哪些隱藏開銷？從住宿、生活費到雜費支出，我們為台灣家長整理出最真實的預算清單與財務準備建議？',
     content: [
       {
         heading: '學費與雜費：超高CP值的入學路徑',
@@ -148,7 +148,7 @@ export const posts: BlogPost[] = [
     slug: 'supporting-student-from-taiwan',
     date: '2026年5月',
     tag: '家長專區',
-    image: '/5.jpg',
+    image: '/Blog_post_banner/post2.png',
     title: '隔著太平洋的陪伴：當孩子在矽谷遇到挑戰，家長可以如何跨海支持？',
     summary:
       '當孩子第一週打電話回家說「我想家」或「選不到課」時，家長該如何反應？FirstWalkUS 如何作為您在美國的眼線與橋樑，讓您在台灣也能安心。',
@@ -175,7 +175,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-application-timeline-taiwan',
     date: '2026年5月',
     tag: '申請指南',
-    image: '/Blog post banner/timeline1.png',
+    image: '/Blog_post_banner/timeline1.png',
     title: 'De Anza College 台灣學生申請時間表：高中畢業後怎麼安排？',
     summary:
       '準備申請 De Anza College 的台灣學生與家長，可以如何安排高中畢業、英文成績、申請文件、I-20、簽證、選課與抵達美國時間？這篇用家長看得懂的方式整理 De Anza College 申請時間表。',
@@ -246,7 +246,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-first-quarter-registration-guide',
     date: '2026年5月',
     tag: '選課攻略',
-    image: '/Blog post banner/post1.png',
+    image: '/Blog_post_banner/post1.png',
     title: 'De Anza College 第一學期選課怎麼準備？家長也看得懂的版本',
     summary:
       'De Anza College 第一學期選課不是隨便選幾堂課就好。這篇用台灣家長看得懂的方式，說明新生說明會、英文與數學程度評估、教育計畫、英文數學課與轉 UC 路線如何影響第一學期安排。',
@@ -321,7 +321,7 @@ export const posts: BlogPost[] = [
     slug: 'de-anza-english-placement-guide',
     date: '2026年5月',
     tag: '英文培訓',
-    image: '/Blog post banner/Englishclass_deanza.png',
+    image: '/Blog_post_banner/Englishclass_deanza.png',
     title: 'De Anza College 英文程度評估是什麼？台灣學生要怎麼準備？',
     summary:
       'De Anza College 英文程度評估會影響台灣學生第一學期英文課、ESL 或可轉學英文課的安排。這篇用家長看得懂的方式說明 placement、English、ESL 與準備方向。',
