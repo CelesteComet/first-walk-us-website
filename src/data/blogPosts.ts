@@ -10,83 +10,95 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
-    slug: 'why-de-anza',
-    date: '2026年4月',
-    tag: '學校介紹',
-    image: '/DAC_Aerial-2.jpg',
-    title: '為什麼選擇 De Anza College？給台灣學生的完整解析',
-    summary:
-      'De Anza College 位於加州矽谷核心的庫比蒂諾市，不只是一所社區大學，更是無數學生通往頂尖 UC 的黃金跳板。本文帶你全面了解它的優勢。',
-    content: [
-      {
-        heading: '矽谷正中心，地理位置無可取代',
-        body: 'De Anza College 坐落於庫比蒂諾（Cupertino），與 Apple 全球總部相距不到一公里。走在校園附近，隨處可見科技巨頭的招牌——Google、Apple、Meta、Nvidia 都在附近設有辦公室。這樣的地理位置讓學生在求學期間便能接觸矽谷的實際氛圍，建立人脈，甚至獲得實習機會，是其他社區大學難以複製的先天優勢。',
-      },
-      {
-        heading: '轉學加州頂尖 UC 的成功率名列前茅',
-        body: 'De Anza 每年輸送大量學生轉學至 UC Berkeley、UCLA、UC San Diego 等頂尖大學，轉學人數長期位居加州社區大學前段班。學校設有完整的轉學輔導中心（Transfer Center），提供一對一顧問諮詢、轉學申請工作坊，以及與各 UC 校方的直接對話活動（Transfer Day）。只要策略正確、選課得當，兩年內轉進 UC 並非遙不可及的夢想。',
-      },
-      {
-        heading: '學費親民，CP 值遠勝直接申請四年制大學',
-        body: '對台灣學生而言，直接申請美國四年制大學的學費動輒一年新台幣一百萬以上。相較之下，De Anza 的國際學生學費每學期約 $4,000–$5,000 美元，一年總花費（含生活費）約 $25,000 美元，遠低於 UC 或私立大學。更重要的是，轉學後仍可以較低的 in-state 或同等學費標準入讀，整體留學成本大幅降低。',
-      },
-      {
-        heading: '台灣學生友善，有完整的國際學生支援',
-        body: 'De Anza 的國際學生辦公室（International Student Program, ISP）提供從入學、簽證、選課到生活適應的全方位協助。校內亦有台灣同學會及亞裔學生社群，讓第一次出國的學生不會在語言或文化上感到孤立無援。若你是第一次離開台灣，這樣溫暖的社群支持往往是撐過第一學期的關鍵。',
-      },
-    ],
-  },
-  {
-    slug: 'de-anza-campus-life',
-    date: '2026年4月',
-    tag: '校園生活',
-    image: '/DA_Fountain_View.png',
-    title: 'De Anza College 的校園生活：台灣學生第一年的真實體驗',
-    summary:
-      '來到 De Anza 第一年，你會面對什麼？從選課、社團、飲食到通勤，這篇文章帶你提前預覽矽谷社區大學的日常。',
-    content: [
-      {
-        heading: '開學前：選課策略決定一切',
-        body: '許多台灣學生到了 De Anza 才發現：這裡的選課不像台灣大學有固定課表，而是需要自己主動規劃。若目標是轉學 UC，建議第一學期就諮詢 Transfer Center，確認自己修習的是 IGETC（加州大學一般教育學分轉移課程），避免之後選錯課白白浪費一學期。英文寫作（English Composition）和數學是所有 UC 轉學的必備科目，務必盡早完成。',
-      },
-      {
-        heading: '課堂文化與台灣大不同',
-        body: '在 De Anza，教授非常鼓勵學生發言、提問與討論。課堂參與往往計入成績，默默坐在後排只看黑板的台灣式學習方式在這裡行不通。一開始不習慣是正常的，但只要願意開口，即使英文不完美，教授 and 同學都會給予正面回應。多利用 Tutoring Center and 辦公室時間（Office Hours），是學業成績進步最快的方式。',
-      },
-      {
-        heading: '校園設施與日常便利',
-        body: 'De Anza 的校園設施相當完善，包含現代化的圖書館、健身房、游泳池以及多個學習中心。校內的 Flint Center 不定期舉辦音樂會與文化活動。飲食方面，學生餐廳選擇多元，周邊的庫比蒂諾有大量亞裔餐廳，台式、港式、日式料理都不難找，思鄉的胃不必太擔心。',
-      },
-      {
-        heading: '通勤與生活機能',
-        body: '大多數台灣學生選擇在學校附近租屋，單人套房或與室友分租一房約 $1,200–$1,800 美元／月。由於矽谷大眾運輸相對不便，不少學生會選擇購買二手自行車或在持有駕照後購買二手車。De Anza 附近有 Cupertino Square 購物中心，步行可達多家超市與餐廳，日常生活機能尚算便利。',
-      },
-    ],
-  },
-  {
-    slug: 'transfer-path',
-    date: '2026年4月',
+    slug: 'honors-and-clubs-guide',
+    date: '2026年5月',
     tag: '轉學攻略',
-    image: '/de-anza-student.jpg',
-    title: '從 De Anza 轉學 UC：台灣學生的完整路徑指南',
+    image: '/Blog_post_banner/deanza_honors_taiwan.png',
+    title: '提升轉學競爭力：De Anza Honors Program 與社團攻略',
     summary:
-      '進入 De Anza 只是起點，轉學頂尖 UC 才是許多台灣學生的最終目標。本文整理出清晰的轉學路線圖，讓你兩年不走冤枉路。',
+      '想進 UC Berkeley 或 UCLA？除了 GPA，Honors Program 與社團領導力是關鍵。本文為你解析如何透過榮譽課程與校園參與脫穎而出。',
     content: [
       {
-        heading: '第一步：確認目標校系，逆向規劃選課',
-        body: '轉學成功的關鍵在於「逆向工程」——先確定自己想轉去的 UC 及科系，再回頭查詢該校系的 Articulation Agreement（學分對應協議）。加州有一個叫做 ASSIST.org 的官方網站，清楚列出每一所社區大學的哪些課程可以對應到 UC 的哪些要求。建議在第一學期開始前就規劃好兩年的完整選課藍圖。',
+        heading: 'Honors Program：進入頂尖 UC 的敲門磚',
+        body: 'De Anza 的榮譽課程（Honors Program）是為志在頂尖名校的學生設計的。只要維持 GPA 3.4 以上，即可申請加入。完成五門榮譽課程（約 20-25 學分）並獲得 B 以上成績，畢業時會獲得榮譽證書。更重要的是，De Anza 與 UC Irvine 有「Honors-to-Honors」協議，能顯著提升錄取率。',
       },
       {
-        heading: '第二步：完成 IGETC 及主修必備課程',
-        body: 'IGETC 是一組通識學分，完成後可以豁免大多數 UC 的大一通識要求，大幅降低轉學後的學業壓力。同時，各科系通常也有「必備主修課程（Major Prerequisites）」，例如電腦科學系需要修完微積分、線性代數、資料結構等課。這些課必須在轉學申請前完成或正在修習中，且成績理想（建議 B+ 以上）。',
+        heading: '社團領導力：UC 綜合評鑑的核心',
+        body: 'UC 申請不只看成績，更看重 Extracurricular Activities。建議加入與主修相關的社團，例如 CS 學生的 Google Developer Student Club、商科學生的 Business Club。若學校裡沒有你感興趣的社團，你甚至可以揪團「自創社團」！在履歷上，「創始人 (Founder)」的經歷能向招生官展現極強的動手能力與領導特質，這對轉學申請是非常大的加分項。',
       },
       {
-        heading: '第三步：維持 GPA 並準備轉學文件',
-        body: '加州 UC 轉學的最低 GPA 要求通常是 2.4，但熱門科系（如 CS、商科、工程）實際錄取 GPA 往往在 3.5 以上。每學期都要認真對待每一門課。除了成績，轉學申請還需要撰寫 Personal Insight Questions（類似申請大學的個人陳述），建議提前三到六個月開始構思，讓輔導老師 or 顧問協助修改。',
+        heading: 'UC TAG：你的名校錄取保險',
+        body: '除了努力衝刺夢想學校，聰明的學生會利用 UC TAG (保證錄取協議)。只要在 De Anza 維持指定的 GPA 並完成必修課，你就能提前鎖定包括 UC Irvine、UC Davis 在內的 6 所名校錄取名額。這是社大轉學制度中，能大幅減輕心理壓力的保底神器。',
       },
       {
-        heading: '第四步：善用 De Anza 的資源衝刺申請',
-        body: 'De Anza 的 Transfer Center 每年秋季會舉辦 Transfer Day，UC 各校招生官親臨現場，台灣學生千萬不要錯過。此外，學校的寫作中心（Writing Center）可以免費幫你修改個人陳述，學術顧問（Counselor）也可以協助確認你的選課計畫是否符合目標校系的轉學要求。充分利用這些免費資源，是讓轉學申請更有競爭力的最聰明做法。',
+        heading: 'PIQ 是什麼？UC 的「紙上面試」',
+        body: 'PIQ 全名為 Personal Insight Questions，是申請 UC 時必填的 4 題自述短文。因為 UC 轉學不提供面試，這就是招生官了解你個人特質、領導力與克服挑戰經歷的唯一管道。參加社團或 Honors 課程不只是為了裝飾履歷，更是為了累積這些文章的素材，讓你的申請書有血有肉。',
+      },
+      {
+        heading: 'FirstWalkUS 陪跑亮點',
+        body: '在第一學期的選課規劃中，我們就會特別提點學生 PIQ 的重要性。我們會引導孩子在求學初期就開始留意並累積相關經歷，確保兩年後申請時，他們手中有豐富的素材可以分享，而不是等到要申請時才面對空白的螢幕發愁。',
+      },
+    ],
+  },
+  {
+    slug: 'transportation-guide-2026',
+    date: '2026年5月',
+    tag: '生活機能',
+    image: '/Blog_post_banner/deanza_bus_taiwan.png',
+    title: '沒車也能行：De Anza 學生通勤與 2026 交通全攻略',
+    summary:
+      '初到美國還沒買車？別擔心！善用 VTA SmartPass 與 2026 年最新的單車基建，你在 Cupertino 也能輕鬆移動。',
+    content: [
+      {
+        heading: '學生交通卡 (SmartPass)：公車搭到飽的生存神器',
+        body: '每位 De Anza 學生在註冊時都會繳交一筆少額的交通費，這讓你擁有一張無限次搭乘 VTA 巴士與輕軌（類似路面電車）的 SmartPass。這就像是一張「公車搭到飽」的悠遊卡，2026 年 VTA 針對 523 與 57 等熱門路線進行了班次優化，只要持 Clipper Card 嗶一下即可暢行矽谷。',
+      },
+      {
+        heading: '2026 單車友善城市：更安全的通勤選擇',
+        body: 'Cupertino 於 2026 年完成了 De Anza Boulevard 的緩衝自行車道工程。現在，騎單車往返校園與宿舍變得更安全。學校還提供 E-Bike 租借計畫，對於住在比較遠一點區域的學生來說是個非常棒的選擇。',
+      },
+      {
+        heading: '週末去舊金山？善用 Caltrain 火車',
+        body: '想去舊金山（San Francisco）或史丹佛大學（Palo Alto）走走嗎？你可以從學校搭乘 VTA Rapid 523 巴士，約 20 分鐘即可抵達 Sunnyvale Caltrain 站。換乘 Caltrain 火車後，就能輕鬆前往灣區各大城市，這也是留學生週末探索加州最方便的方式。',
+      },
+      {
+        heading: 'FirstWalkUS 陪跑亮點',
+        body: '落地服務的第一週，我們會親自帶你辦理 Clipper Card，並規劃最安全、最省錢的通勤路線，讓你不用急著花大錢買車也能開始新生活。',
+      },
+    ],
+  },
+  {
+    slug: 'taiwanese-food-cupertino-map',
+    date: '2026年5月',
+    tag: '美食指南',
+    image: '/Blog_post_banner/boba_taiwan_deanza.png',
+    title: '矽谷裡的台灣味：Cupertino 必訪超市與美食地圖',
+    summary:
+      '想念家鄉的牛肉麵、大腸麵線 or 珍珠奶茶？庫比蒂諾是矽谷台灣美食的核心，這份清單讓你一解鄉愁。',
+    content: [
+      {
+        heading: 'Cupertino Village：留學生的生活重心',
+        body: '這裡是 De Anza 學生的第二個校園。裡面有 99 Ranch Market（大華超市）可以買到食材，還有 Miniso（名創優品）與 Kira Kira Store 可以採買生活小物與台灣化妝品，以及 iTaiwan 專門提供各類台灣進口的零食與特產，讓你一秒回到台灣。',
+      },
+      {
+        heading: '兩家 99 Ranch Market 在哪裡？',
+        body: 'Cupertino 共有兩家大華超市：一家位於 Wolfe Rd 上的 Cupertino Village 內，生活機能最集中；另一家則在南邊的 S De Anza Blvd 上，過來買菜也非常方便。',
+      },
+      {
+        heading: '手搖飲天堂：正宗台灣味',
+        body: 'Cupertino 是灣區的手搖飲一級戰區。你可以在這裡找到 CHICHA San Chen（吃茶三千）、TP Tea（茶湯會）、Sunright Tea Studio（日出茶太）以及 Shang Yu Lin（上宇林）等正宗台灣品牌。無論是國王珍珠奶茶還是現萃茶，都能讓你隨時補給「台灣能量」。',
+      },
+      {
+        heading: 'Main Street Cupertino：現代聚會新選擇',
+        body: '位於 Stevens Creek Blvd 上的 Main Street 區有 Philz Coffee、各式特色餐廳（如 Kura Sushi 迴轉壽司），以及台灣同學最熟悉的 85°C Bakery Cafe（85度C）。這裡環境優雅且有戶外座位，是許多學生買個家鄉味麵包、在週末進行小組討論或課後聚餐的首選地點。',
+      },
+      {
+        heading: '舌尖上的家鄉：必訪台灣餐廳',
+        body: '除了自己下廚，Cupertino 周邊有非常多正宗的台灣餐廳。像是以牛肉麵和便當聞名的「梁媽媽家 (Liang\'s Village)」、還有從台灣開過來的「段純貞 (Duan Chun Zhen)」牛肉麵。如果你想念台式清粥小菜，這裡也有專門的清粥店。想吃家鄉味真的超容易！',
+      },
+      {
+        heading: 'FirstWalkUS 陪跑亮點',
+        body: '我們的落地服務包含「採買日」，我們會帶你到兩家超市選購生活必備品，並介紹周邊最地道的台灣美食與手搖飲店，讓你在美國的第一週就能吃到熟悉的味道，減少適應期的孤獨感。',
       },
     ],
   },
@@ -132,7 +144,7 @@ export const posts: BlogPost[] = [
       },
       {
         heading: '住宿支出：矽谷生活最大的開銷',
-        body: 'Cupertino 附近的房租相對較高。單人分租雅房（Shared Bathroom）約每月 $1,200 - $1,500 美元；若希望有獨立衛浴（Suite）則約 $1,800 美元以上。我們會協助學生尋找 CP 值高且交通便利的物件，或媒合合適的台灣室友以降低成本。',
+        body: 'Cupertino 附近的房租相對較高。單人分租雅房（Shared Bathroom）約每月 $1,800 - $2,200 美元；若希望有獨立衛浴（Suite）則約 $2,500 美元以上。我們會協助學生尋找 CP 值高且交通便利的物件，或媒合合適的台灣室友以降低成本。',
       },
       {
         heading: '生活雜支與外食預算',
@@ -141,33 +153,6 @@ export const posts: BlogPost[] = [
       {
         heading: '健康保險與突發預算',
         body: '學校強制要求國際學生購買健康保險，每學期約 $600 美元。我們強烈建議家長為孩子準備一份約 $3,000 美元的「緊急預備金」，存放於孩子的美國銀行帳戶中，以應對突發的醫療或緊急交通需求。',
-      },
-    ],
-  },
-  {
-    slug: 'supporting-student-from-taiwan',
-    date: '2026年5月',
-    tag: '家長專區',
-    image: '/Blog_post_banner/post2.png',
-    title: '隔著太平洋的陪伴：當孩子在矽谷遇到挑戰，家長可以如何跨海支持？',
-    summary:
-      '當孩子第一週打電話回家說「我想家」或「選不到課」時，家長該如何反應？FirstWalkUS 如何作為您在美國的眼線與橋樑，讓您在台灣也能安心。',
-    content: [
-      {
-        heading: '第一學期的文化衝擊與孤獨感',
-        body: '即使在台灣英文成績優異，孩子抵達美國的前三個月仍會經歷嚴重的文化衝擊。這段時間他們最需要的不是指導，而是同理心。家長可以在視訊時多聽少說，給予心理支持。FirstWalkUS 的每週定時關心（Check-in），正是為了在孩子感到孤獨時，提供第一時間的在地協助。',
-      },
-      {
-        heading: '選課壓力與學業挫折',
-        body: '美國的大學選課是「搶課大戰」。如果孩子第一學期沒搶到必修，往往會感到非常焦慮。我們會教導孩子如何使用 Waitlist、如何寫郵件跟教授爭取 Add Code，甚至陪他們直接去辦公室詢問。這些實務操作，我們會在現場帶著孩子做，減輕他們的無助感。',
-      },
-      {
-        heading: '生活瑣事的磨練',
-        body: '從銀行卡被鎖、電話費沒繳到車子爆胎，這些都是成長的必經之路。我們會扮演「學姊」的角色，在現場指導孩子解決問題，而不是代勞。這樣既能解決目前的困難，又能培養孩子的獨立能力，同時讓家長不必在台灣乾著急。',
-      },
-      {
-        heading: 'FirstWalkUS：您在美國的代理人',
-        body: '我們建立了一個透明的溝通機制，若有重大突發狀況，我們會第一時間聯繫家長並提供在地支援。我們不只是孩子的顧問，更是家長在美國最信任的盟友，讓這段留學之路不是孩子一個人的孤軍奮戰，而是有計畫的穩健前行。',
       },
     ],
   },
@@ -202,7 +187,7 @@ export const posts: BlogPost[] = [
       },
       {
         heading: '8 月：完成新生說明會與選課準備',
-        body: '8 月通常是非常關鍵的月份。孩子不是等到開學才開始準備選課。很多事情最好在抵達美國前就先弄清楚。學生通常需要確認：新生說明會（orientation）是否完成、英文程度評估（English placement）結果、數學程度評估（Math placement）結果、初步教育計畫（abbreviated educational plan）、第一學期想選哪些課、如果課滿了，是否知道候補名單（waitlist）怎麼使用、是否知道學生系統 MyPortal（MyPortal）、是否知道線上課程平台 Canvas（Canvas）、是否有學校學生 email（student email）。對家長來說，可以把 8 月理解成：「孩子不是還沒開學，而是其實已經在準備進入美國大學系統了。」',
+        body: '8 月通常是非常關鍵的月份。孩子不是等到開學才開始準備選課。很多事情最好在抵達美國前就先弄清楚。學生通常需要確認：新生說明會（orientation）是否完成、英文程度評估（English placement）結果、數學程度評估（Math placement）結果、初步教育計畫（abbreviated educational plan）、第一學期想選哪些課、如果課滿了，是否知道候補名單（waitlist）怎麼使用、是否知道學生系統 MyPortal（MyPortal）是什麼、線上課程平台 Canvas（Canvas）怎麼用、學校學生 email（student email）要不要每天看。',
       },
       {
         heading: '9 月：建議提前 1–2 週抵達美國',
@@ -214,11 +199,11 @@ export const posts: BlogPost[] = [
       },
       {
         heading: '1. 選課時間',
-        body: '很多熱門課不會等到開學才慢慢選。如果學生太晚完成新生說明會（orientation）、英文與數學程度評估（placement） or 初步教育計畫（abbreviated educational plan），可能會影響第一學期選課準備。',
+        body: '很多熱門課不會等到開學才慢慢選。如果學生太晚完成新生說明會（orientation）、英文與數學程度評估（placement） or 初步教育計畫（abbreviated educational plan）、可能會影響第一學期選課準備。',
       },
       {
         heading: '2. 英文與數學程度',
-        body: '學生不一定一開始就知道自己該選哪一門英文 or 數學。尤其是想走生物、藥學、醫學預科、商科、經濟、電腦科學 or 工程方向的學生，英文 and 數學安排會影響後面的修課節奏。',
+        body: '學生不一定一開始就知道自己該選哪一門英文 or 數學。尤其是想走生物、藥學、醫學預科、商科、經濟、電腦科學 or 工程方向的學生、英文 and 數學安排會影響後面的修課節奏。',
       },
       {
         heading: '3. 生活安頓',
@@ -234,7 +219,7 @@ export const posts: BlogPost[] = [
       },
       {
         heading: 'Alice 的經驗提醒',
-        body: '我自己當年也是從 De Anza College 轉學到 UC Berkeley。即使我英文不差，第一次來美國時，還是有許多事情不知道要問誰。像是課要怎麼選、學校課業顧問（counselor）要怎麼約、英文課 and 英文為第二語言課程（ESL）有什麼差別、哪裡買生活用品、沒有車怎麼生活，這些都不是申請表上會告訴你的事情。現在我住在 Silicon Valley，也更理解台灣家長把孩子送來美國時，真正擔心的不是只有「有沒有錄取」，而是孩子到了以後，有沒有人可以問，有沒有人可以陪他把第一步走穩。',
+        body: '我自己當年也是從 De Anza College 轉學到 UC Berkeley。即使我英文不差，第一次來美國時，還是有許多事情不知道要問誰。像是課要怎麼選、學校課業顧問（counselor）要怎麼約、英文課 and 英文為第二語言課程（ESL）有什麼差別、哪裡買生活用品、沒有車怎麼生活，這些都不是申請表上會告訴你的事情。現在我住在 Silicon Valley，也更理解台灣家長把孩子送來美國時，真正擔心的是孩子到了以後，有沒有人可以問，有沒有人可以陪他把第一步走穩。',
       },
       {
         heading: 'FirstWalkUS 可以怎麼協助？',
@@ -265,11 +250,11 @@ export const posts: BlogPost[] = [
       },
       {
         heading: '1. 新生說明會（orientation）',
-        body: '新生說明會（orientation）是讓學生了解學校系統、選課流程、學生資源 and 基本規定。家長不要把新生說明會當成可有可無。很多學生第一次進入美國大學系統，如果沒有認真了解，後面會不知道：學生系統 MyPortal（MyPortal）是什麼、線上課程平台 Canvas（Canvas）怎麼用、學校學生 email（student email）要不要每天看、選課註冊（registration）怎麼操作、課滿了怎麼加入候補名單（waitlist）、學校課業顧問（counselor）要怎麼預約。',
+        body: '新生說明會（orientation）是讓學生了解學校系統、選課流程、學生資源 and 基本規定。家長不要把新生說明會當成可有可裝。很多學生第一次進入美國大學系統，如果沒有認真了解，後面會不知道：學生系統 MyPortal（MyPortal）是什麼、線上課程平台 Canvas（Canvas）怎麼用、學校學生 email（student email）要不要每天看、選課註冊（registration）怎麼操作、課滿了怎麼加入候補名單（waitlist）、學校課業顧問（counselor）要怎麼預約。',
       },
       {
         heading: '2. 英文與數學程度評估（placement）',
-        body: '學生需要確認自己的英文程度評估（English placement） and 數學程度評估（Math placement）。家長可以把程度評估理解成：學校要判斷孩子目前比較適合從哪一個英文或數學課程開始。這一步很重要，因為它會影響：第一學期能不能選到合適英文課、能不能修某些數學課、能不能開始主修相關先修課、轉學時間線會不會被拉長。',
+        body: '學生需要確認自己的英文程度評估（English placement） and 數學程度評估（Math placement）。家長可以幫程度評估理解成：學校要判斷孩子目前比較適合從哪一個英文或數學課程開始。這一步很重要，因為它會影響：第一學期能不能選到合適英文課、能不能修某些數學課、能不能開始主修相關先修課、轉學時間線會不會被拉長。',
       },
       {
         heading: '3. 主修方向與教育目標（major and educational goal）',
@@ -309,7 +294,7 @@ export const posts: BlogPost[] = [
       },
       {
         heading: 'Alice 的經驗提醒',
-        body: '我自己當年也是從 De Anza College 轉學到 UC Berkeley。回頭看，第一學期最重要的不是選到一張看起來很厲害的課表，而是要選到一張能讓學生穩定開始、又不浪費轉學時間的課表。很多台灣學生其實很認真，但剛來美國時不知道怎麼問問題，也 不知道「這門課好不好」 and 「這門課對轉學有沒有用」是兩件不同的事。',
+        body: '我自己當年也是從 De Anza College 轉學到 UC Berkeley。回頭看，第一學期最重要的不是選到一張看起來很厲害的課表，而是要選到一張能讓學生穩定開始、又不浪費轉學時間的課表。很多台灣學生其實學認真，但剛來美國時不知道怎麼問問題，也 不知道「這門課好不好」 and 「這門課對轉學有沒有用」是兩件不同的事。',
       },
       {
         heading: 'FirstWalkUS 可以怎麼協助？',
@@ -399,8 +384,115 @@ export const posts: BlogPost[] = [
         body: '我自己當年從 De Anza College 轉學到 UC Berkeley。美國大學的英文不只是「會不會講英文」，而是能否閱讀大量文章、理解教授要求、寫出有架構的 essay 並參與討論。一開始有人幫忙把流程講清楚，孩子會安心很多。',
       },
       {
-        heading: 'FirstWalkUS 可以怎麼協助？',
-        body: 'FirstWalkUS 協助學生 與 家長理解程度評估、整理問題，並在孩子剛來美國最容易慌亂的階段，提供在地陪伴 與 方向感。歡迎預約免費諮詢。',
+        heading: 'FirstWalkUS 協助學生 與 家長理解程度評估、整理問題，並在孩子剛來美國最容易慌亂的階段，提供在地陪伴 與 方向感。歡迎預約免費諮詢。',
+      },
+    ],
+  },
+  {
+    slug: 'supporting-student-from-taiwan',
+    date: '2026年5月',
+    tag: '家長專區',
+    image: '/Blog_post_banner/post2.png',
+    title: '隔著太平洋的陪伴：當孩子在矽谷遇到挑戰，家長可以如何跨海支持？',
+    summary:
+      '當孩子第一週打電話回家說「我想家」或「選不到課」時，家長該如何反應？FirstWalkUS 如何作為您在美國的眼線與橋樑，讓您在台灣也能安心。',
+    content: [
+      {
+        heading: '第一學期的文化衝擊與孤獨感',
+        body: '即使在台灣英文成績優異，孩子抵達美國的前三個月仍會經歷嚴重的文化衝擊。這段時間他們最需要的不是指導，而是同理心。家長可以在視訊時多聽少說，給予心理支持。FirstWalkUS 的每週定時關心（Check-in），正是為了在孩子感到孤獨時，提供第一時間的在地協助過。',
+      },
+      {
+        heading: '選課壓力與學業挫折',
+        body: '美國的大學選課是「搶課大戰」。如果孩子第一學期沒搶到必修，往往會感到非常焦慮。我們會教導孩子如何使用 Waitlist、如何寫郵件跟教授爭取 Add Code，甚至陪他們直接去辦公室詢問。這些實務操作，我們會在現場帶著孩子做，減輕他們的無助感。',
+      },
+      {
+        heading: '生活瑣事的磨練',
+        body: '從銀行卡被鎖、電話費沒繳到車子爆胎，這些都是成長的必經之路。我們會扮演「學姊」的角色，在現場指導孩子解決問題，而不是代勞。這樣既能解決目前的困難，又能培養孩子的獨立能力，同時讓家長不必在台灣乾著急。',
+      },
+      {
+        heading: 'FirstWalkUS：您在美國的代理人',
+        body: '我們建立了一個透明的溝通機制，若有重大突發狀況，我們會第一時間聯繫家長並提供在地支援。我們不只是孩子的顧問，更是家長在美國最信任的盟友，讓這段留學之路不是孩子一個人的孤軍奮戰，而是有計畫的穩健前行。',
+      },
+    ],
+  },
+  {
+    slug: 'why-de-anza',
+    date: '2026年4月',
+    tag: '學校介紹',
+    image: '/DAC_Aerial-2.jpg',
+    title: '為什麼選擇 De Anza College？給台灣學生的完整解析',
+    summary:
+      'De Anza College 位於加州矽谷核心的庫比蒂諾市，不只是一所社區大學，更是無數學生通往頂尖 UC 的黃金跳板。本文帶你全面了解它的優勢。',
+    content: [
+      {
+        heading: '矽谷正中心，地理位置無可取代',
+        body: 'De Anza College 坐落於庫比蒂諾（Cupertino），與 Apple 全球總部相距不到一公里。走在校園附近，隨處可見科技巨頭的招牌——Google、Apple、Meta、Nvidia 都在附近設有辦公室。這樣的地理位置讓學生在求學期間便能接觸矽谷的實際氛圍，建立人脈，甚至獲得實習機會，是其他社區大學難以複製的先天優勢。',
+      },
+      {
+        heading: '轉學加州頂尖 UC 的成功率名列前茅',
+        body: 'De Anza 每年輸送大量學生轉學至 UC Berkeley、UCLA、UC San Diego 等頂尖大學，轉學人數長期位居加州社區大學前段班。學校設有完整的轉學輔導中心（Transfer Center），提供一對一顧問諮詢、轉學申請工作坊，以及與各 UC 校方的直接對話活動（Transfer Day）。只要策略正確、選課得當，兩年內轉進 UC 並非遙不可及的夢想。',
+      },
+      {
+        heading: '學費親民，CP 值遠勝直接申請四年制大學',
+        body: '對台灣學生而言，直接申請美國四年制大學的學費動輒一年新台幣一百萬以上。相較之下，De Anza 的國際學生學費每學期約 $4,000–$5,000 美元，一年總花費（含生活費與住宿）約 $45,000 美元，遠低於 UC 或私立大學。更重要的是，轉學後仍可以較低的 in-state 或同等學費標準入讀，整體留學成本大幅降低。',
+      },
+      {
+        heading: '台灣學生友善，有完整的國際學生支援',
+        body: 'De Anza 的國際學生辦公室（International Student Program, ISP）提供從入學、簽證、選課到生活適應的全方位協助。校內亦有台灣同學會及亞裔學生社群，讓第一次出國的學生不會在語言或文化上感到孤立無援。若你是第一次離開台灣，這樣溫暖的社群支持往往是撐過第一學期的關鍵。',
+      },
+    ],
+  },
+  {
+    slug: 'transfer-path',
+    date: '2026年4月',
+    tag: '轉學攻略',
+    image: '/de-anza-student.jpg',
+    title: '從 De Anza 轉學 UC：台灣學生的完整路徑指南',
+    summary:
+      '進入 De Anza 只是起點，轉學頂尖 UC 才是許多台灣學生的最終目標。本文整理出清晰的轉學路線圖，讓你兩年不走冤枉路。',
+    content: [
+      {
+        heading: '第一步：確認目標校系，逆向規劃選課',
+        body: '轉學成功的關鍵在於「逆向工程」——先確定自己想轉去的 UC 及科系，再回頭查詢該校系的 Articulation Agreement（學分對應協議）。加州有一個叫做 ASSIST.org 的官方網站，清楚列出每一所社區大學的哪些課程可以對應到 UC 的哪些要求。建議在第一學期開始前就規劃好兩年的完整選課藍圖。',
+      },
+      {
+        heading: '第二步：完成 IGETC 及主修必備課程',
+        body: 'IGETC 是一組通識學分，完成後可以豁免大多數 UC 的大一通識要求，大幅降低轉學後的學業壓力。同時，各科系通常也有「必備主修課程（Major Prerequisites）」，例如電腦科學系需要修完微積分、線性代數、資料結構等課。這些課必須在轉學申請前完成或正在修習中，且成績理想（建議 B+ 以上）。',
+      },
+      {
+        heading: '第三步：維持 GPA 並準備轉學文件',
+        body: '加州 UC 轉學的最低 GPA 要求通常是 2.4，但熱門科系（如 CS、商科、工程）實際錄取 GPA 往往在 3.5 以上。每學期都要認真對待每一門課。除了成績，轉學申請還需要撰寫 Personal Insight Questions（類似申請大學的個人陳述），建議提前三到六個月開始構思，讓輔導老師 or 顧問協助修改。',
+      },
+      {
+        heading: '第四步：善用 De Anza 的資源衝刺申請',
+        body: 'De Anza 的 Transfer Center 每年秋季會舉辦 Transfer Day， UC 各校招生官親臨現場，台灣學生千萬不要錯過。此外，學校的寫作中心（Writing Center）可以免費幫你修改個人陳述，學術顧問（Counselor）也可以協助確認你的選課計畫是否符合目標校系的轉學要求。充分利用這些免費資源，是讓轉學申請更有競爭力的最聰明做法。',
+      },
+    ],
+  },
+  {
+    slug: 'de-anza-campus-life',
+    date: '2026年4月',
+    tag: '校園生活',
+    image: '/DA_Fountain_View.png',
+    title: 'De Anza College 的校園生活：台灣學生第一年的真實體驗',
+    summary:
+      '來到 De Anza 第一年，你會面對什麼？從選課、社團、飲食到通勤，這篇文章帶你提前預覽矽谷社區大學的日常。',
+    content: [
+      {
+        heading: '開學前：選課策略決定一切',
+        body: '許多台灣學生到了 De Anza 才發現：這裡的選課不像台灣大學有固定課表，而是需要自己主動規劃。若目標是轉學 UC，建議第一學期就諮詢 Transfer Center，確認自己修習的是 IGETC（加州大學一般教育學分轉移課程），避免之後選錯課白白浪費一學期。英文寫作（English Composition）和數學是所有 UC 轉學的必備科目，務必盡早完成。',
+      },
+      {
+        heading: '課堂文化與台灣大不同',
+        body: '在 De Anza，教授非常鼓勵學生發言、提問與討論。課堂參與往往計入成績，默默坐在後排只看黑板的台灣式學習方式在這裡行不通。一開始不習慣是正常的，但只要願意開口，即使英文不完美，教授 and 同學都會給予正面回應。多利用 Tutoring Center and 辦公室時間（Office Hours），是學業成績進步最快的方式。',
+      },
+      {
+        heading: '校園設施與日常便利',
+        body: 'De Anza 的校園設施相當完善，包含 modern 的圖書館、健身房、游泳池以及多個學習中心。校內的 Flint Center 不定期舉辦音樂會與文化活動。飲食方面，學生餐廳選擇多元，周邊的庫比蒂諾有大量亞裔餐廳，台式、港式、日式料理都不難找，思鄉的胃不必太擔心。',
+      },
+      {
+        heading: '通勤與生活機能',
+        body: '大多數台灣學生選擇在學校附近租屋，單人套房或與室友分租一房約 $1,800–$2,500 美元／月。由於矽谷大眾運輸相對不便，不少學生會選擇購買二手自行車或在持有駕照後購買二手車。De Anza 附近的購物機能非常成熟，除了步行可達的 Target 與提供亞洲超市與美食的 Cupertino Village 外，附近的 Main Street Cupertino 也是學生聚會的熱點。此外，原 Vallco Mall 正在改建為大型開發案「The Rise」，未來將提供更多購物與休閒空間。',
       },
     ],
   },
