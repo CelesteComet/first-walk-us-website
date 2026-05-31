@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Instagram, Mail, Calendar, MessageCircle } from 'lucide-react'
+import { Instagram, Mail, Calendar, MessageCircle, Youtube } from 'lucide-react'
 
 export const Route = createFileRoute('/contact')({ component: Contact })
 
@@ -16,6 +16,12 @@ function Contact() {
       label: 'Instagram',
       value: '@firstwalkus',
       href: 'https://www.instagram.com/firstwalkus',
+    },
+    {
+      icon: <Youtube className="w-5 h-5" />,
+      label: 'YouTube',
+      value: '@FirstWalkUS',
+      href: 'https://www.youtube.com/@FirstWalkUS',
     },
     {
       icon: <MessageCircle className="w-5 h-5" />,

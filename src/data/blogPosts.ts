@@ -13,7 +13,7 @@ export const posts: BlogPost[] = [
     slug: 'honors-and-clubs-guide',
     date: '2026年5月',
     tag: '轉學攻略',
-    image: '/Blog_post_banner/deanza_honors_taiwan.png',
+    image: '/Blog_post_banner/honors.png',
     title: '提升轉學競爭力：De Anza Honors Program 與社團攻略',
     summary:
       '想進 UC Berkeley 或 UCLA？除了 GPA，Honors Program 與社團領導力是關鍵。本文為你解析如何透過榮譽課程與校園參與脫穎而出。',
