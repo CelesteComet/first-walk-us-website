@@ -1,12 +1,35 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { posts } from '../data/blogPosts'
 
+const SITE_URL = import.meta.env.VITE_SITE_URL ?? 'https://firstwalkus.com'
+
 export const Route = createFileRoute('/blog_/$slug')({
   component: BlogPost,
   loader: ({ params }) => {
     const post = posts.find((p) => p.slug === params.slug)
     if (!post) throw notFound()
     return post
+  },
+  head: ({ loaderData: post, params }) => {
+    if (!post) return {}
+    const imageUrl = `${SITE_URL}${post.image}`
+    const pageUrl = `${SITE_URL}/blog/${params.slug}`
+    return {
+      meta: [
+        { title: post.title },
+        { name: 'description', content: post.summary },
+        { property: 'og:title', content: post.title },
+        { property: 'og:description', content: post.summary },
+        { property: 'og:image', content: imageUrl },
+        { property: 'og:url', content: pageUrl },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:site_name', content: 'First Walk US' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: post.title },
+        { name: 'twitter:description', content: post.summary },
+        { name: 'twitter:image', content: imageUrl },
+      ],
+    }
   },
 })
 
