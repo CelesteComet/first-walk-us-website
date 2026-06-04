@@ -8,7 +8,7 @@ export const Route = createFileRoute('/')({ component: Home })
 const videos = [
   { id: 'L-yOsQZc_7Q', title: '3 Myths about American Community College', titleZh: '美國社區大學三大迷思' },
   { id: 'DAd6a-QFrvc', title: 'De Anza College Campus Tour', titleZh: 'De Anza College 校園導覽' },
-  { id: 'm8B8k0qboRU', title: 'Transfer to UC Berkeley', titleZh: '從加州社大轉入名校' },
+  { id: 'ivw6GsOKy8w', title: 'Transfer to UC Berkeley', titleZh: '從加州社大轉入名校' },
   { id: 'I5JI4RFdtEc', title: 'UC Berkeley Admission Evaluator', titleZh: '柏克萊大學入學評審專訪' },
   { id: 'LEE_pXjpZWo', title: 'UC Berkeley Campus Tour', titleZh: '加州柏克萊大學導覽' },
 ]
